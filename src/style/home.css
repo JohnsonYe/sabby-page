@@ -1,0 +1,59 @@
+.project-item {
+    padding: 0px 0px 50px 0px;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item .right {
+    padding: 0px 0px 0px 50px;
+    width: 450px;
+}
+
+.project-title,
+.project-description {
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.project-title {
+    font-size: var(--sub-header-font);
+}
+
+.project-description {
+    font-size: var(--paragraph-font);
+}
+
+.introduction-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.intro-section {
+    text-align: left;
+    color: var(--text);
+}
+
+.intro-description :not(:first-child) {
+    text-align: center;
+}
+
+.image-section {
+    background-image: url('../images/background.jpg');
+    background-size:cover;
+    width: 450px;
+    height: 450px;
+    position: relative;
+}
+
+.image-section > .personal-image {
+    width: 248px;
+    height: 248px;
+    position: absolute;
+    top: 101px;
+    left: 101px;
+}

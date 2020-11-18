@@ -1,0 +1,44 @@
+.app-header {
+    padding: 0;
+    position: fixed;
+    top: 0;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2,1fr);
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+    /* box-shadow: 0 2px 5px #a9a8a8; */
+    transition: top 0.3s;
+}
+
+.bgColor-main {
+    background-color: var(--brand);
+}
+
+header nav .navbar-link {
+    display: inline-flex;
+    height: 100%;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 25px;
+    color: var(--text);
+}
+
+.nav-logo {
+    padding: 15px 32px;
+}
+
+.logo-image {
+    width: 50px;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+}
