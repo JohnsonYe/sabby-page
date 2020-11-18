@@ -33,9 +33,8 @@ const Home = function() {
                     {/* <img className="personal-image" src={ImageBackground} /> */}
                     <img className="personal-image" src={PersonalImage} />
                 </div>
-                <div className="intro-section header">
+                <div className="intro-section">
                     <div className="intro-title">HELLO I AM SABRINA</div>
-                    <br/>
                     <div className="intro-description header">
                         <div>I Create Friendly Experience</div>
                         <div>For People Like</div>
