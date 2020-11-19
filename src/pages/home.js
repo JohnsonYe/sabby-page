@@ -18,9 +18,9 @@ const Home = function() {
     const generateProject = function (title, descrption) {
         return (
             <div className="class-info">
-                <div className="project-title">{title}</div>
-                <div className="project-description">{descrption}</div>
-                <a href="https://www.google.com">view Case Study</a>
+                <div className="project-title header-l">{title}</div>
+                <div className="project-description paragraph-m">{descrption}</div>
+                <a href="https://www.google.com">View Case Study</a>
             </div>
         );
     }
@@ -34,11 +34,21 @@ const Home = function() {
                     <img className="personal-image" src={PersonalImage} />
                 </div>
                 <div className="intro-section">
-                    <div className="intro-title">HELLO I AM SABRINA</div>
-                    <div className="intro-description header">
-                        <div>I Create Friendly Experience</div>
-                        <div>For People Like</div>
-                        <div><b><i>You</i></b> & <b><i>Me</i></b></div>
+                    <div className="intro-title header-s">HELLO! I AM SABRINA</div>
+                    <div className="intro-description header-m">
+                        <div>A
+                            <b className="header-l semi-bold"> UX designer </b> 
+                            who uses 
+                            <b className="header-l semi-bold"> Research </b>
+                            and
+                            <b className="header-l semi-bold"> Empathy </b>
+                        </div>
+                        <div>to create
+                            <b className="header-l semi-bold"> Easy to use </b>
+                            and
+                            <b className="header-l semi-bold"> Beautiful </b>
+                        </div>
+                        <div>digital experiences.</div>
                     </div>
                 </div>
             </div>

@@ -5,8 +5,12 @@
     --highlighYello: #FFD873;
     --text: #4E4C4C;
     --header-font: 48px;
+    --header-l-font: 42px;
+    --header-m-font: 32px;
+    --header-s-font: 24px;
     --sub-header-font: 36px;
     --paragraph-font: 24px;
+    --paragraph-m-font: 18px;
     --link-font: 18px;
     --font-type: 'Source Sans Pro';
 }
@@ -21,6 +25,26 @@ body {
 .header {
     font-size: var(--header-font);
     margin-bottom: 10px;
+}
+
+.header-l {
+    font-size: var(--header-l-font);
+}
+
+.header-m {
+    font-size: var(--header-m-font);
+}
+
+.header-s {
+    font-size: var(--header-s-font);
+}
+
+.paragraph-m {
+    font-size: var(--paragraph-m-font);
+}
+
+.semi-bold {
+    font-weight: 600;
 }
 
 .sub-title {
@@ -181,4 +205,20 @@ svg {
 
 a {
     color: inherit;
-} 
+}
+
+.success {
+    color: #4BB543;
+}
+
+.fail {
+    color: #cc3300;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}

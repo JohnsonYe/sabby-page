@@ -36,9 +36,17 @@
 }
 
 .btn-submit {
-    background-color: #FFDFE4;
+    background-color: #F5DB7E;
     border: none;
     border-radius: 8px;
     padding: 12px 35px;
     font-size: 18px;
+}
+
+.form-send {
+    padding: 10px;
+}
+
+.btn.btn-submit {
+    cursor: pointer;
 }

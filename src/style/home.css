@@ -21,16 +21,7 @@
 
 .intro-title {
     margin-bottom: 25px;
-    font-size: 32px;
     text-align: center;
-}
-
-.project-title {
-    font-size: var(--sub-header-font);
-}
-
-.project-description {
-    font-size: var(--paragraph-font);
 }
 
 .introduction-container {
@@ -44,7 +35,7 @@
     color: var(--text);
 }
 
-.intro-description :not(:first-child) {
+.intro-description {
     text-align: center;
 }
 

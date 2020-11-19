@@ -20,9 +20,9 @@ const About = function() {
                 <div className="about-image">
                     <img src={ImageBackground}/>
                 </div>
-                <div className="about-name header">
-                    <div>Hello! My Name is</div>
-                    <div>SABRINA SHOKRET</div>
+                <div className="about-name">
+                    <div className="header-m">Hello! My Name is</div>
+                    <div className="header">SABRINA SHOKRET</div>
                 </div>
             </div>
 
