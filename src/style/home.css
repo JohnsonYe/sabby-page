@@ -1,16 +1,17 @@
 .project-item {
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 100px 0px;
 }
 
 .project-item {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .project-item .right {
-    padding: 0px 0px 0px 50px;
     width: 450px;
+    text-align: center;
 }
 
 .project-title,
@@ -53,4 +54,14 @@
     position: absolute;
     top: 101px;
     left: 101px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .project-list .project-item:nth-child(2) .right {
+        order: 1;
+    }
+    
+    .project-list .project-item:nth-child(2) .border-container {
+        order: 2;
+    }
 }

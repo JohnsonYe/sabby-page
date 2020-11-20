@@ -8,17 +8,24 @@ const Contact = function() {
     const template_id = "template_t6a6k2j";
     const [success, setSuccess] = useState('hide');
     const [fail, setFail] = useState('hide');
+    const [sent, setSent] = useState('hide');
 
 
     function sendEmail(e) {
         e.preventDefault()
+        document.getElementById("form-submit-btn").setAttribute('disabled', 'disabled');
+        setFail('hide');
+        setSuccess('hide');
+        setSent('show');
         emailjs.sendForm(service_id, template_id, e.target, user_id)
-            .then(result => {
-                console.log(result);
+            .then(() => {
                 setSuccess('show');
-            }).catch(error => {
-                console.log(error);
+                document.getElementById("form-submit-btn").removeAttribute('disabled'); 
+            }).catch(() => {
                 setFail('show');
+                document.getElementById("form-submit-btn").removeAttribute('disabled'); 
+            }).finally(() =>{
+                setSent('hide');
             });
     }
     
@@ -53,11 +60,13 @@ const Contact = function() {
                         </div>
 
                         <div className="form-submit">
-                            <input type="submit" className="btn btn-submit" value="SEND"></input>
+                            <input type="submit" className="btn btn-submit" id="form-submit-btn" value="Send"/>
+                            <div className={"sender " + sent}></div>
                             <span className={"form-send success " + success}>sent <i className="fas fa-check"></i></span>
                             <span className={"form-send fail " + fail}>Fail to send! Please try again.</span>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>

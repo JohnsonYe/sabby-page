@@ -42,3 +42,9 @@ header nav .navbar-link {
     display: flex;
     flex-wrap: nowrap;
 }
+
+@media only screen and (max-width: 575px) {
+    .nav-logo {
+        padding: 15px 18px;
+    }
+}

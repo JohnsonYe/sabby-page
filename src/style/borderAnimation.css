@@ -1,0 +1,65 @@
+.border-container {
+    width: 600px;
+    height: 350px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(180deg);
+    }
+}
+.rainbow {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.rainbow .sub-image-container {
+    background-image: url('../images/milky-rect.png');
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.rainbow::before {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: #399953;
+    background-repeat: no-repeat;
+    background-size: 50% 50%, 50% 50%;
+    background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+    background-image:   linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
+                        linear-gradient(#F9F9F9, #F9F9F9),
+                        linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
+                        linear-gradient(#F9F9F9, #F9F9F9);
+
+}
+
+.border-container:hover .rainbow::before {
+    box-sizing: border-box;
+    -webkit-animation: rotate 1s ease-in-out;
+    animation: rotate 1s ease-in-out;
+}
+
+.rainbow::after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #F9F9F9;
+}

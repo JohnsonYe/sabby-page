@@ -1,36 +1,40 @@
 import React from 'react';
 import '../style/home.css';
 import PersonalImage from '../images/personal-image-1.jpg';
+import BorderContainer from '../components/BorderAnimation';
 const Home = function() {
-    const getBorder = function () {
-        return (
-            <div className="container-border">
-                {/* <svg width="650px" height="350px" viewBox="0 0 650 350" class="border">
-                    <polyline points="649,1 649,349 1,349 1,1, 649,1" class="bg-line" />
-                    <polyline points="1,1 649,1 649,349 1,349 1,1" class="hl-line" />
-                </svg> */}
-                <div className="sub-border-1"></div>
-                <div className="sub-border-2"></div>
-            </div>
-        );
-    }
-
-    const generateProject = function (title, descrption) {
+    const generateProject = function (title, descrption, redirectUrl) {
         return (
             <div className="class-info">
                 <div className="project-title header-l">{title}</div>
                 <div className="project-description paragraph-m">{descrption}</div>
-                <a href="https://www.google.com">View Case Study</a>
+                <a href={redirectUrl}>View Case Study</a>
             </div>
         );
     }
-    const mirrorText = "A line to describe the project or two lines is fine too. A line to describe the project or two lines is fine too.";
+
+    const projects = [
+        {
+            name: "Project 1",
+            description: "Project 1 Description.",
+            url: "https://www.google.com"
+        },
+        {
+            name: "Project 2",
+            description: "Project 2 Description.",
+            url: "https://www.apple.com"
+        },
+        {
+            name: "Project 3",
+            description: "Project 3 Description.",
+            url: "https://www.amazon.com"
+        },
+    ];
 
     return (
         <div className="home-container">
             <div className="introduction-container">
                 <div className="image-section">
-                    {/* <img className="personal-image" src={ImageBackground} /> */}
                     <img className="personal-image" src={PersonalImage} />
                 </div>
                 <div className="intro-section">
@@ -52,16 +56,18 @@ const Home = function() {
                     </div>
                 </div>
             </div>
-
+            
             <div className="project-list">
-                <div className="project-item">
-                    <div className="left">
-                        {getBorder()}
-                    </div>
-                    <div className="right">
-                        {generateProject('Mirror', mirrorText)}
-                    </div>
-                </div>
+                {projects.map(project => {
+                    return (
+                        <div className="project-item">
+                            <BorderContainer />
+                            <div className="right">
+                                {generateProject(project.name, project.description, project.url)}
+                            </div>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )
