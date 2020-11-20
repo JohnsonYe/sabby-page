@@ -3,9 +3,12 @@ import ImageBackground from '../images/personal-image-min.jpg';
 import '../style/about.css';
 
 const About = function() {
-    const description_1 = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-    const description_2 = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).";
-    
+    const descriptions = [
+        "Hello! My name is Sabrina and I am a UX designer from San Diego, California. I graduated from California State University Fullerton with a Japanese/Linguistic Major. Before my UX journey started, I was studying for my court interpreting certificates. One day while I was talking to a friend, he randomly mentioned UX design. I went home and did some research about what UX is, and then here I am! I became a UX designer.",
+        "When I was taking the trial course of UX design, I found it to be a nice, interesting, and easy job to do. But after joining an intense bootcamp, I know that I was wrong. Nothing is easy, especially when it comes to design. Iteration is almost everything. Since there are so many designers out there, I always wanted to design something cool and unique to stand out from others. But after learning what UX designers really do, now I know the real good designs are the ones that really makes the users feel ease when using their design.",
+        "I was miserable for a long time not knowing what to do, but now I am glad that I found UX design as a career. I can not wait to become a strong designer who uses research and empathy to create easy to use and beautiful user experiences!"
+    ]
+
     function generateDescription(text) {
         return (
             <div className="about-me">
@@ -28,8 +31,7 @@ const About = function() {
 
             <div className="about-section-2">
                 <div className="about-description">
-                    {generateDescription(description_1)}
-                    {generateDescription(description_2)}
+                    {descriptions.map(description => { return generateDescription(description); })}
                 </div>
             </div>
         </div>
