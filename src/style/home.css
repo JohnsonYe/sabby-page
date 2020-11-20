@@ -43,17 +43,11 @@
 .image-section {
     background-image: url('../images/background.jpg');
     background-size:cover;
-    width: 450px;
-    height: 450px;
     position: relative;
 }
 
 .image-section > .personal-image {
-    width: 248px;
-    height: 248px;
     position: absolute;
-    top: 101px;
-    left: 101px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -65,3 +59,52 @@
         order: 2;
     }
 }
+
+@media only screen and (max-width: 1199px) {
+    .border-container {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    .image-section {
+        width: 375px;
+        height: 375px;
+    }
+
+    .image-section > .personal-image {
+        width: 207px;
+        height: 207px;
+        top: 84px;
+        left: 84px;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .image-section {
+        width: 326px;
+        height: 326px;
+    }
+
+    .image-section > .personal-image {
+        width: 180px;
+        height: 180px;
+        top: 73px;
+        left: 73px;
+    }
+}
+
+@media only screen and (min-width: 476px) {
+    .image-section {
+        width: 450px;
+        height: 450px;
+    }
+    
+    .image-section > .personal-image {
+        width: 248px;
+        height: 248px;
+        top: 101px;
+        left: 101px;
+    }
+}
+
