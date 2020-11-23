@@ -2,22 +2,24 @@ import React from 'react';
 import '../style/home.css';
 import PersonalImage from '../images/personal-image-1.jpg';
 import BorderContainer from '../components/BorderAnimation';
+import { Link } from 'react-router-dom';
+
 const Home = function() {
     const generateProject = function (title, descrption, redirectUrl) {
         return (
             <div className="class-info">
                 <div className="project-title header-l">{title}</div>
                 <div className="project-description paragraph-m">{descrption}</div>
-                <a href={redirectUrl}>View Case Study</a>
+                <Link to={redirectUrl} className="nav-link">View Case Study</Link>
             </div>
         );
     }
 
     const projects = [
         {
-            name: "Project 1",
-            description: "Project 1 Description.",
-            url: "https://www.google.com"
+            name: "MIRROR",
+            description: "A responsive E-commerce website and rebrand for a better online shopping experiences.",
+            url: "/projects/mirror"
         },
         {
             name: "Project 2",
@@ -61,7 +63,7 @@ const Home = function() {
                 {projects.map(project => {
                     return (
                         <div className="project-item">
-                            <BorderContainer />
+                            <BorderContainer projectURL={project.url} />
                             <div className="right">
                                 {generateProject(project.name, project.description, project.url)}
                             </div>

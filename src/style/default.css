@@ -66,7 +66,8 @@ body {
 .about-container,
 .projects-container,
 .resume-container,
-.contact-container {
+.contact-container,
+.case-study-container {
     padding-top: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -146,7 +147,8 @@ body {
 @media only screen and (min-width: 575px) {
     .project-list,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .projects-container {
         width: 100%;
     }
 }
@@ -154,7 +156,8 @@ body {
 @media only screen and (min-width: 576px) {
     .project-list,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .projects-container {
         width: 540px;
     }
 }
@@ -162,7 +165,8 @@ body {
 @media only screen and (min-width: 768px) {
     .project-list,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .projects-container {
         width: 720px;
     }
 }
@@ -170,7 +174,8 @@ body {
 @media only screen and (min-width: 992px) {
     .project-list,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .projects-container {
         width: 960px;
     }
 }
@@ -178,7 +183,8 @@ body {
 @media only screen and (min-width: 1200px) {
     .project-list,
     .about-container,
-    .contact-container {
+    .contact-container,
+    .projects-container {
         width: 1140px;
     }
 }

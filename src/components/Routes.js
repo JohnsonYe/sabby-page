@@ -6,7 +6,7 @@ import About from '../pages/about';
 import Projects from '../pages/projects';
 import Resume from '../pages/resume';
 import Contact from '../pages/contact';
-
+import Project_Mirror from '../pages/projects/mirror';
 const Routes = () => {
 
     
@@ -17,6 +17,7 @@ const Routes = () => {
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/about" component={About}/>
                 <Route exact path="/projects" component={Projects}/>
+                <Route exact path="/projects/mirror" component={Project_Mirror}/>
                 <Route exact path="/resume" component={Resume}/>
                 <Route exact path="/contact" component={Contact}/>
             </Switch>

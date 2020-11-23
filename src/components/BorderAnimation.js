@@ -1,8 +1,9 @@
 import React from 'react';
 import '../style/borderAnimation.css';
 // import Milky from '../images/milky-rect.png';
+import { Route, Redirect } from 'react-router-dom';
 
-const BorderAnimation = function() {
+const BorderAnimation = function({projectURL}) {
     const getBorder = function () {
         return (
             <div className="rainbow" onClick={()=>comingSoon()}>
@@ -12,7 +13,9 @@ const BorderAnimation = function() {
     }
 
     const comingSoon = function () {
-        alert('The project page is coming soon!');
+        // alert('The project page is coming soon!');
+        console.log(projectURL);
+        <Redirect push to="/projects/mirror" />
     }
 
 
