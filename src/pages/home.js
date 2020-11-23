@@ -10,7 +10,7 @@ const Home = function() {
             <div className="class-info">
                 <div className="project-title header-l">{title}</div>
                 <div className="project-description paragraph-m">{descrption}</div>
-                <Link to={redirectUrl} className="nav-link">View Case Study</Link>
+                <Link to={redirectUrl} className="nav-link" onClick={()=>scrollToTo()}>View Case Study</Link>
             </div>
         );
     }
@@ -32,6 +32,10 @@ const Home = function() {
             url: "/"
         },
     ];
+
+    function scrollToTo() {
+        window.scrollTo(0, 0);
+    }
 
     return (
         <div className="home-container">
@@ -63,7 +67,7 @@ const Home = function() {
                 {projects.map((project, i) => {
                     return (
                         <div className="project-item" key={"project-list-"+i}>
-                            <Link to={project.url} className="nav-link"><BorderContainer /></Link>
+                            <Link to={project.url} className="nav-link" onClick={()=>scrollToTo()}><BorderContainer /></Link>
                             {/* <BorderContainer projectURL={project.url} /> */}
                             <div className="right">
                                 {generateProject(project.name, project.description, project.url)}

@@ -7,8 +7,9 @@ const NavBar = () => {
     window.onscroll = function() {
         if (window.location.pathname === "/projects/mirror") {
             var currentScrollPos = window.pageYOffset;
-            if (prevScrollpos > currentScrollPos) {
+            if (prevScrollpos > currentScrollPos || currentScrollPos === prevScrollpos) {
                 document.getElementsByClassName("app-header")[0].style.top = "0";
+                
             } else {
                 document.getElementsByClassName("app-header")[0].style.top = "-100px";
             }
