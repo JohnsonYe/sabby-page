@@ -8,7 +8,7 @@
 }
 
 .mirror .header-image > img {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
@@ -18,9 +18,10 @@
     padding-top: 25px;
 }
 
-.case-study-container .project-body .project-body-title {
+.project-body-title {
     text-align: center;
     font-size: var(--header-l-font);
+    padding-top: 50px;
 }
 
 .case-study-container .project-body .overview-title,
@@ -102,6 +103,23 @@
     width: 100%;
 } */
 
+.overview-title.title,
+.procecss-title.title,
+.empathize-title.title,
+.design-title.title,
+.define-title.title,
+.test-title.title,
+.conclusion-title.title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.overview-text.ending {
+    font-size: 24px;
+    text-align: center;
+    margin: 100px 0px;
+}
+
 .competitorLogo img {
     width: 180px;
     height: 80px;
@@ -111,17 +129,33 @@
 .project-process,
 .project-empathize,
 .project-define,
-.project-design {
+.project-design,
+.project-test,
+.project-conclusion {
     padding-top: 50px;
 }
 
 .wireframe-image > img {
-    width: 300px;
-    height: 500px;
+    /* width: 300px;
+    height: 500px; */
+    width: 100%;
+    height: 100%;
 }
 
 .wireframe-image {
-    margin: 5px;
+    /* margin: 5px; */
+    width: calc(90% / 3);
+    height: calc(90% / 3);
+}
+
+.wireframe-image:nth-child(4),
+.wireframe-image:nth-child(5) {
+    margin-top: 25px;
+}
+
+.wireframe-image > img:nth-child(2) {
+    width: 100%;
+    height: 90%;
 }
 
 .hi_fi_wireframe-image {
@@ -141,12 +175,28 @@
     flex-direction: column;
 }
 
+.research-image-group.ui-design {
+    width: 100%;
+}
+
 .ui-design-image {
-    width: 450px;
+    width: 100%;
+}
+
+.view-prototype {
+    padding: 25px 0px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 0px 2px lightgrey;
 }
 
 .project-image-section:not(:last-child) {
     margin-bottom: 12px;
+}
+
+.competitorLogo:last-child > img {
+    border: 1px solid black;
 }
 
 @media only screen and (min-width: 575px) {
@@ -180,7 +230,7 @@
 }
 
 /* Limit header image size on large screen */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 790px) {
     .mirror .header-image > img {
         width: 100vw;
     } 

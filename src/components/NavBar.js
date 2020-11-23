@@ -3,16 +3,18 @@ import { Link, NavLink } from 'react-router-dom';
 import '../style/navbar.css';
 import brandLogo from '../images/logo.png';
 const NavBar = () => {
-    // var prevScrollpos = window.pageYOffset;
-    // window.onscroll = function() {
-    //     var currentScrollPos = window.pageYOffset;
-    //     if (prevScrollpos > currentScrollPos) {
-    //         document.getElementsByClassName("app-header")[0].style.top = "0";
-    //     } else {
-    //         document.getElementsByClassName("app-header")[0].style.top = "-100px";
-    //     }
-    //     prevScrollpos = currentScrollPos;
-    // }
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+        if (window.location.pathname === "/projects/mirror") {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementsByClassName("app-header")[0].style.top = "0";
+            } else {
+                document.getElementsByClassName("app-header")[0].style.top = "-100px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    }
     return (
         <header className="app-header bgColor-main"> 
             <div className="nav-link nav-logo">

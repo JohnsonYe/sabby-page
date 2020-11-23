@@ -8,9 +8,6 @@ import Resume from '../pages/resume';
 import Contact from '../pages/contact';
 import Project_Mirror from '../pages/projects/mirror';
 const Routes = () => {
-
-    
-
     return (
         <div className="main-container">
             <Switch>

@@ -24,12 +24,12 @@ const Home = function() {
         {
             name: "Project 2",
             description: "Project 2 Description.",
-            url: "https://www.apple.com"
+            url: "/"
         },
         {
             name: "Project 3",
             description: "Project 3 Description.",
-            url: "https://www.amazon.com"
+            url: "/"
         },
     ];
 
@@ -60,10 +60,11 @@ const Home = function() {
             </div>
             
             <div className="project-list">
-                {projects.map(project => {
+                {projects.map((project, i) => {
                     return (
-                        <div className="project-item">
-                            <BorderContainer projectURL={project.url} />
+                        <div className="project-item" key={"project-list-"+i}>
+                            <Link to={project.url} className="nav-link"><BorderContainer /></Link>
+                            {/* <BorderContainer projectURL={project.url} /> */}
                             <div className="right">
                                 {generateProject(project.name, project.description, project.url)}
                             </div>

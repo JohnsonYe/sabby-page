@@ -9,9 +9,9 @@ const About = function() {
         "I was miserable for a long time not knowing what to do, but now I am glad that I found UX design as a career. I can not wait to become a strong designer who uses research and empathy to create easy to use and beautiful user experiences!"
     ]
 
-    function generateDescription(text) {
+    function generateDescription(text, index) {
         return (
-            <div className="about-me">
+            <div className="about-me" key={"about-me-"+index}>
                 {text}
             </div>
         );
@@ -31,7 +31,7 @@ const About = function() {
 
             <div className="about-section-2">
                 <div className="about-description">
-                    {descriptions.map(description => { return generateDescription(description); })}
+                    {descriptions.map((description, i) => { return generateDescription(description, i); })}
                 </div>
             </div>
         </div>

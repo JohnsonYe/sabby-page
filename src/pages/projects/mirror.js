@@ -14,11 +14,7 @@ import wireframe_2 from '../../images/mirror/wireframe/2_CATEGORY_PAGE.png';
 import wireframe_3 from '../../images/mirror/wireframe/3_PRODUCT_FILTER_MODAL.png';
 import wireframe_4 from '../../images/mirror/wireframe/4_Detail_product_page.png';
 import wireframe_5 from '../../images/mirror/wireframe/5_CART_PAGE.png';
-import ui_design_1 from '../../images/mirror/ui_design/1.png';
-import ui_design_2 from '../../images/mirror/ui_design/2.png';
-import ui_design_3 from '../../images/mirror/ui_design/3.png';
-import ui_design_4 from '../../images/mirror/ui_design/4.png';
-import ui_design_5 from '../../images/mirror/ui_design/5.png';
+import ui_design_1 from '../../images/mirror/ui_design/case_study_UI.png'
 import hi_fi_wireframe_1 from '../../images/mirror/hi_fi/1.png';
 import hi_fi_wireframe_2 from '../../images/mirror/hi_fi/2.png';
 import hi_fi_wireframe_3 from '../../images/mirror/hi_fi/3.png';
@@ -28,7 +24,6 @@ import hi_fi_wireframe_6 from '../../images/mirror/hi_fi/6.png';
 import hi_fi_wireframe_7 from '../../images/mirror/hi_fi/7.png';
 import hi_fi_wireframe_8 from '../../images/mirror/hi_fi/8.png';
 import hi_fi_wireframe_9 from '../../images/mirror/hi_fi/9.png';
-import { Link } from 'react-router-dom';
 
 const Mirror = function() {
     const overview = {
@@ -41,6 +36,11 @@ const Mirror = function() {
 
     const competitorLogoGroup = [SHEIN_LOGO, ROMWE_LOGO, WISH_LOGO, HANDM_LOGO, UNIQLO_LOGO];
 
+    const conclusion = {
+        text: "I have learned many great lessons from designing an ecommerce website. I believe I followed my goals and ended up creating a user friendly web design. This was my first and ever design and I am sure it is still not perfect, but what is perfect anyway? Perfectness comes in  time and experiences.",
+        ending: "Thank you for your time! Remember to be happy!"
+    }
+
     const test = {
         mfp: {
             label: "Mid-fidelity prototypes",
@@ -52,8 +52,8 @@ const Mirror = function() {
             text: "All three of my participants felt that my designs were great and were easy to access. Most of the features were clear and easy to understand, which led to the quick and successful purchase process. Here are some things I found after the whole testing process (including the interview) was done.",
             list: [
                 "All of the participants favored the navigation bar to be very clear and big. It visually gave them hierarchy to better finish the process of buying a dress.",
-                "All of the Participants were more focused or expected to have really cool designs and features during this test. Two of the three participants recommended looking at Zara’s page for some ideas. One participant recommended using cuter fonts to make the page look more unique.  As I explain instead of having cool features, I wanted to focus more on the smooth flow of purchasing a product. They soon agreed and said my overall flow was good.",
-                "All of the participants were very satisfied with the experience of shopping for this specific task. They said the site was clear and were able to find the things they need fast. Which I believe proves that my usability testing and my prototypes succeed."
+                "All of the participants were more focused or expected to have really cool designs and features during this test. Two of the three participants recommended looking at Zara’s page for some ideas. One participant recommended using cuter fonts to make the page look more unique.  As I explained instead of having cool features, I wanted to focus more on the smooth flow of purchasing a product. They soon agreed and said my overall flow was good.",
+                "All of the participants were very satisfied with the experience of shopping for this specific task. They said the site was clear and were able to find the things they needed fast. Which I believe that my usability testing and my prototypes succeed."
             ]
         }
     }
@@ -61,7 +61,7 @@ const Mirror = function() {
     const research = {
         goals: [
             "Understand the market for online shopping, and find out how competitors are solving problems.",
-            "identify what makes the user want to shop online.",
+            "Identify what makes the user want to shop online.",
             "Identify the user's shopping pattern. (Find out the underlying problem with online shopping)",
             "Identify what demographic group likes to shop online.",
             "Identify when users like to shop online, and when they like to shop in store.",
@@ -106,7 +106,7 @@ const Mirror = function() {
         ],
         marketResearch: [
             "We are targeting sites that sell low cost but good quality clothing. So I targeted online shopping sites like Shein, Romewe, and Wish.",
-            "The biggest similarity about those sites are they are always on some sort of sales.",
+            "The biggest similarity about those sites are they are always on sale.",
             "What makes them different is their wardrobe collection, shipping time and return policies.",
             "Shein is using a rewarding program. The amount of money you spent will become reward points, and every review you write will be 10 points. The points you collected will become real money discounts at the checkout.",
             "So far no company is using a virtual try-on feature.",
@@ -121,7 +121,7 @@ const Mirror = function() {
 
     const design = {
         wireframes: [wireframe_1, wireframe_2, wireframe_3, wireframe_4, wireframe_5],
-        ui_design: [ui_design_1, ui_design_2, ui_design_3, ui_design_4, ui_design_5],
+        ui_design: ui_design_1,
         hi_fi_wireframes: [hi_fi_wireframe_1, hi_fi_wireframe_2, hi_fi_wireframe_3, hi_fi_wireframe_4, hi_fi_wireframe_5, hi_fi_wireframe_6, hi_fi_wireframe_7, hi_fi_wireframe_8, hi_fi_wireframe_9]
     }
 
@@ -158,16 +158,16 @@ const Mirror = function() {
             <table className="table-section">
                 <thead className="table-section-header">
                     <tr>
-                        {research.table.header.map(x => {
-                            return (<th>{x}</th>);
+                        {research.table.header.map((x, i) => {
+                            return (<th key={"table-header-"+i}>{x}</th>);
                         })} 
                     </tr>
                 </thead>
                 <tbody className="table-section-body">
                     <tr>
-                        {research.table.body.map(x=> {
+                        {research.table.body.map((x, i)=> {
                             return (
-                                <td>
+                                <td key={"table-body-"+i}>
                                     <div className="table-body age">
                                         <span>Age: </span>
                                         <span>{x.age}</span>
@@ -193,11 +193,11 @@ const Mirror = function() {
             <div className="research-compare-section">
                 <div className="research-similarities">
                     <div>Similarities</div>
-                    <ul>{research.similarities.map(x=>{return(<li>{x}</li>)})}</ul>
+                    <ul>{research.similarities.map((x, i)=>{return(<li key={"similarities-"+i}>{x}</li>)})}</ul>
                 </div>
                 <div className="research-different">
                     <div>Differences</div>
-                    <ul>{research.differences.map(x=>{return(<li>{x}</li>)})}</ul>
+                    <ul>{research.differences.map((x, i)=>{return(<li key={"differences-"+i}>{x}</li>)})}</ul>
                 </div>
             </div>
         );
@@ -206,8 +206,8 @@ const Mirror = function() {
     const generateImageGroup = function () {
         return (
             <>
-                {competitorLogoGroup.map(x=>{return (
-                    <div className="competitorLogo">
+                {competitorLogoGroup.map((x, i)=>{return (
+                    <div className="competitorLogo" key={"competitorLogo-"+i}>
                         <img src={x}/>
                     </div>
                 )})}
@@ -222,9 +222,9 @@ const Mirror = function() {
                 <div className="sectionBody research">
                     <label>Research goals: </label>
                     <ul className="section-list">
-                        {research.goals.map(goal => {
+                        {research.goals.map((goal, i) => {
                             return (
-                                <li className="overview-text">{goal}</li>
+                                <li key={"goal-"+i} className="overview-text">{goal}</li>
                             )
                         })}
                     </ul>
@@ -242,7 +242,7 @@ const Mirror = function() {
                     <label>Secondary Research:</label>
                     <div className="secondaryResearch-list marketResearch">
                         <div style={{marginTop:"12px"}}>Market Research:</div>
-                        <ul>{research.marketResearch.map(x=>{return (<li>{x}</li>)})}</ul>
+                        <ul>{research.marketResearch.map((x, i)=>{return (<li key={"marketResearch-"+i}>{x}</li>)})}</ul>
                     </div>
 
                     <div className="secondaryResearch-list competitor">
@@ -283,7 +283,7 @@ const Mirror = function() {
     const generateDefine = function () {
         return (
             <div className="project-define">
-                <div className="empathize-title title">DEFINE</div>
+                <div className="define-title title">DEFINE</div>
                 <div className="sectionBody define">
                     <label>Task flow:</label>
                     <div className="overview-text">{define.taskflow}</div>
@@ -303,7 +303,7 @@ const Mirror = function() {
                     <label>{name}:</label>
                     {d}
                     <div className="research-image-group">
-                        {images.map(x=>{return (<div className={type+"-image"}><img src={x}></img></div>)})}
+                        {images.map((x,i)=>{return (<div className={type+"-image"} key={type+'-'+i}><img src={x}></img></div>)})}
                     </div>
                 </div>
             );
@@ -316,16 +316,8 @@ const Mirror = function() {
 
                 <div className="sectionBody design">
                     <label>UI designs:</label>
-                    <div className="research-image-group">
-                        <div className="left-column">
-                            <img className="ui-design-image" src={design.ui_design[0]}></img>
-                            <img className="ui-design-image" src={design.ui_design[1]}></img>
-                        </div>
-                        <div className="right-column">
-                            <img className="ui-design-image" src={design.ui_design[2]}></img>
-                            <img className="ui-design-image" src={design.ui_design[3]}></img>
-                            {/* <img className="ui-design-image" src={design.ui_design[4]}></img> */}
-                        </div>
+                    <div className="research-image-group ui-design">
+                        <img className="ui-design-image" src={design.ui_design}></img>
                     </div>
                 </div>
 
@@ -342,7 +334,7 @@ const Mirror = function() {
                     <label>{test.mfp.label}:</label>
                     <div className="overview-text">{test.mfp.text}</div>
                     <div className="overview-text">Number of participants: {test.mfp.participants}</div>
-                    <a href="https://www.figma.com/file/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=137%3A225" target="_blank"><span>View Prototype Here</span></a>
+                    <a href="https://www.figma.com/file/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=137%3A225" target="_blank"><div className="view-prototype">View Prototype Here</div></a>
                 </div>
 
 
@@ -350,9 +342,21 @@ const Mirror = function() {
                     <label>{test.tf.label}:</label>
                     <div className="overview-text">{test.tf.text}</div>
                     <ul>
-                        {test.tf.list.map(x=>{return(<li>{x}</li>)})}
+                        {test.tf.list.map((x, i)=>{return(<li key={"tf-"+i}>{x}</li>)})}
                     </ul>
                     
+                </div>
+            </div>
+        );
+    }
+
+    const generateConclusion = function () {
+        return (
+            <div className="project-conclusion">
+                <div className="conclusion-title title">CONCLUSION</div>
+                <div className="sectionBody conclusion">
+                    <div className="overview-text">{conclusion.text}</div>
+                    <div className="overview-text ending"><b>{conclusion.ending}</b></div>
                 </div>
             </div>
         );
@@ -361,19 +365,20 @@ const Mirror = function() {
     return (
         <div className="case-study-container mirror">
             <div className="prject-header-background">
+            <div className="project-body-title">MIRROR</div>
                 <div className="header-image">
                     <img src={Mirror_Mock_Up}/>
                 </div>
             </div>
 
             <div className="project-body">
-                <div className="project-body-title">MIRROR</div>
                 {generateOverview()}
                 {generateProcess()}
                 {generateEmpathize()}
                 {generateDefine()}
                 {generateDesign()}
                 {generateTest()}
+                {generateConclusion()}
             </div>
         </div>
     )
