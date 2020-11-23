@@ -43,7 +43,7 @@ const Home = function() {
                     <div className="intro-title header-s">HELLO! I AM SABRINA</div>
                     <div className="intro-description header-m">
                         <div>A
-                            <b className="header-l semi-bold"> UX designer </b> 
+                            <b className="header-l semi-bold"> UX/UI designer </b> 
                             who uses 
                             <b className="header-l semi-bold"> Research </b>
                             and
