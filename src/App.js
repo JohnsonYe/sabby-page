@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Routes from './components/Routes';
 import NavBar from './components/NavBar';
 import Footer from './components/footer';
+import FooterConnection from './components/footerConnection';
 import './style/default.css';
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
       <Router>
         <NavBar />
         <Routes />
+        <FooterConnection />
         <Footer />
       </Router>
     )

@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, NavLink } from 'react-router-dom';
 import '../style/navbar.css';
-import brandLogo from '../images/logo.png';
+import brandLogo from '../images/name-logo.png';
 const NavBar = () => {
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function() {
-        if (window.location.pathname === "/projects/mirror") {
+        // if (window.location.pathname === "/projects/mirror") {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos || currentScrollPos === prevScrollpos) {
                 document.getElementsByClassName("app-header")[0].style.top = "0";
@@ -14,7 +14,7 @@ const NavBar = () => {
                 document.getElementsByClassName("app-header")[0].style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
-        }
+        // }
     }
     return (
         <header className="app-header bgColor-main"> 

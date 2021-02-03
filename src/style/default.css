@@ -4,7 +4,9 @@
     --highlightBlue: #B4FAF6;
     --highlighYello: #FFD873;
     --text: #4E4C4C;
+    --header-xxl-font: 70px;
     --header-font: 48px;
+    --header-xl-font: 46px;
     --header-l-font: 42px;
     --header-m-font: 32px;
     --header-s-font: 24px;
@@ -27,6 +29,14 @@ body {
     margin-bottom: 10px;
 }
 
+.header-xxl {
+    font-size: var(--header-xxl-font);
+}
+
+.header-xl {
+    font-size: var(--header-xl-font);
+}
+
 .header-l {
     font-size: var(--header-l-font);
 }
@@ -39,6 +49,14 @@ body {
     font-size: var(--header-s-font);
 }
 
+.sub-header {
+    font-size: var(--sub-header-font);
+}
+
+.paragraph-r {
+    font-size: var(--paragraph-font);
+}
+
 .paragraph-m {
     font-size: var(--paragraph-m-font);
 }
@@ -47,9 +65,17 @@ body {
     font-weight: 600;
 }
 
+.kinda-bold {
+    font-weight: 500;
+}
+
 .sub-title {
     font-style: italic;
     font-weight: bold;
+}
+
+.small-line-space {
+    padding: 5px 0px;
 }
 
 .main-container {
@@ -59,10 +85,15 @@ body {
 }
 
 .introduction-container {
-    padding: 100px 0px 25px 0px;
+    padding: 100px 0px 0px 0px;
     align-items: center;
 }
-.project-list,
+
+.project-title-category {
+    margin: 100px 0px 50px 0px;
+}
+
+/* .project-list, */
 .about-container,
 .projects-container,
 .resume-container,
@@ -78,7 +109,8 @@ body {
 }
 
 .introduction-container {
-    background-color: var(--brand);
+    /* background-color: var(--brand); */
+    background: linear-gradient(var(--brand), #f2e5f3);
 }
 
 .container-border {
@@ -140,12 +172,15 @@ body {
 }
 
 .footer-social-media .social-media {
-    margin-right: 15px
+    /* margin-right: 15px */
 }
 
+.upper {
+    text-transform: uppercase;
+}
 
 @media only screen and (min-width: 575px) {
-    .project-list,
+    /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {
@@ -154,7 +189,7 @@ body {
 }
 
 @media only screen and (min-width: 576px) {
-    .project-list,
+    /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {
@@ -163,7 +198,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .project-list,
+    /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {
@@ -172,7 +207,7 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-    .project-list,
+    /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {
@@ -181,7 +216,7 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .project-list,
+    /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {

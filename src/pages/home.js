@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/home.css';
-import PersonalImage from '../images/personal-image-1.jpg';
+import PersonalImage from '../images/mochi_compressed.png';
 import BorderContainer from '../components/BorderAnimation';
 import { Link } from 'react-router-dom';
 
@@ -44,9 +44,9 @@ const Home = function() {
                     <img className="personal-image" src={PersonalImage} />
                 </div>
                 <div className="intro-section">
-                    <div className="intro-title header-s">HELLO! I AM SABRINA</div>
+                    <div className="intro-title header-m">HELLO! I AM SABRINA</div>
                     <div className="intro-description header-m">
-                        <div>A
+                        {/* <div>A
                             <b className="header-l semi-bold"> UX/UI designer </b> 
                             who uses 
                             <b className="header-l semi-bold"> Research </b>
@@ -58,11 +58,15 @@ const Home = function() {
                             and
                             <b className="header-l semi-bold"> Beautiful </b>
                         </div>
-                        <div>digital experiences.</div>
+                        <div>digital experiences.</div> */}
+                        <div><b className="header-l kinda-bold upper">I create user friendly designs</b></div>
+                        <div className="small-line-space"></div>
+                        <div><b className="header-l kinda-bold upper">& I love cats</b></div>
                     </div>
                 </div>
+                
             </div>
-            
+            <div className="project-title-category header-l">Projects</div>
             <div className="project-list">
                 {projects.map((project, i) => {
                     return (

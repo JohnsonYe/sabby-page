@@ -1,5 +1,5 @@
 .project-item {
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 200px 0px;
 }
 
 .project-item {
@@ -21,7 +21,7 @@
 }
 
 .intro-title {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     text-align: center;
 }
 
@@ -29,6 +29,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* background-image: url('../images/mochi_with_bg.png'); */
+    /* height: calc(100vh - 100px); */
 }
 
 .intro-section {
@@ -36,18 +38,44 @@
     color: var(--text);
 }
 
+.project-title-category {
+    text-align: center;
+    padding: 25px 0px;
+    /* border-top: 2px solid #212121; */
+    /* border-bottom: 2px solid #212121; */
+}
+
 .intro-description {
     text-align: center;
 }
 
 .image-section {
-    background-image: url('../images/background.jpg');
+    /* background-image: url('../images/background.jpg'); */
     background-size:cover;
     position: relative;
 }
 
 .image-section > .personal-image {
+    width: 100%;
+    height: 100%;
+    /* margin-top: -80px; */
+}
+
+.intro-section,
+.image-section > .personal-image {
+    margin-left: -150px;
+}
+
+.image-section > .personal-image {
     position: absolute;
+}
+
+.image-section {
+        /* width: 375px;
+        height: 375px; */
+        width: 50vw;
+    height: 100vh;
+    margin-top: -100px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -67,44 +95,44 @@
 }
 
 @media only screen and (max-width: 475px) {
-    .image-section {
+    /* .image-section {
         width: 375px;
         height: 375px;
-    }
+    } */
 
-    .image-section > .personal-image {
+    /* .image-section > .personal-image {
         width: 207px;
         height: 207px;
         top: 84px;
         left: 84px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 374px) {
-    .image-section {
+    /* .image-section {
         width: 326px;
         height: 326px;
-    }
+    } */
 
-    .image-section > .personal-image {
+    /* .image-section > .personal-image {
         width: 180px;
         height: 180px;
         top: 73px;
         left: 73px;
-    }
+    } */
 }
 
 @media only screen and (min-width: 476px) {
-    .image-section {
+    /* .image-section {
         width: 450px;
         height: 450px;
-    }
+    } */
     
-    .image-section > .personal-image {
+    /* .image-section > .personal-image {
         width: 248px;
         height: 248px;
         top: 101px;
         left: 101px;
-    }
+    } */
 }
 

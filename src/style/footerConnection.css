@@ -1,0 +1,14 @@
+.footerConnection-section {
+    border-top: 1px solid #212121;
+    text-align: center;
+    padding: 12px 0px 24px 0px;
+}
+
+.footerConnection-section > div {
+    padding: 2px 0px;
+}
+
+.contact-email {
+    text-decoration: underline;
+    color: #f18d8d;
+}

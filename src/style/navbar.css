@@ -15,7 +15,8 @@
 }
 
 .bgColor-main {
-    background-color: var(--brand);
+    /* background-color: var(--brand); */
+    background: linear-gradient(#ECCBF1, #e3f4f5);
 }
 
 header nav .navbar-link {
@@ -32,10 +33,12 @@ header nav .navbar-link {
 
 .nav-logo {
     padding: 15px 32px;
+    width: 250px;
 }
 
 .logo-image {
-    width: 50px;
+    width: 100%;
+    margin-top: 18px;
 }
 
 .navbar {
