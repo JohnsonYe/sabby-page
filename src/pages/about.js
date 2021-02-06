@@ -20,7 +20,7 @@ const About = function() {
     }
 
     return (
-        <div className="about-container">
+        <div className="about-container" id="container-id">
             <div className="about-section-1">
                 <div className="about-image">
                     <img src={ImageBackground}/>
@@ -30,8 +30,8 @@ const About = function() {
                     <div className="header-xxl">About Sabrina</div>
                     <div className="header-detail">
                         <div className="header-s">Current location: Los Angeles, CA</div>
-                        <div className="header-s">Mother of 2 lovely cats!</div>
-                        <div className="header-s">Fun fact: I am panti-lingual!</div>
+                        <div className="header-s">Mother of 2 lovely cats</div>
+                        <div className="header-s">Fun fact: I am panti-lingual</div>
                     </div>
                 </div>
             </div>

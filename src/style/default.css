@@ -1,5 +1,6 @@
 :root {
-    --background: #F9F9F9;
+    --background: #FFF8EA;
+    /* --background: #EDFFF8; */
     --brand: #E0F7F8;
     --highlightBlue: #B4FAF6;
     --highlighYello: #FFD873;
@@ -12,9 +13,10 @@
     --header-s-font: 24px;
     --sub-header-font: 36px;
     --paragraph-font: 24px;
+    --paragraph-l-font: 22px;
     --paragraph-m-font: 18px;
     --link-font: 18px;
-    --font-type: 'Source Sans Pro';
+    --font-type: Cabin;
 }
 
 body {
@@ -22,7 +24,32 @@ body {
     background-color: var(--background);
     font-family: var(--font-type);
     color: var(--text);
+
+  
+    
+    background: linear-gradient(-45deg, #f5efdf, #f5e8d6, #edf8f4, #fdf2d2);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    top: 1000px;
+  }
 
 .header {
     font-size: var(--header-font);
@@ -57,6 +84,10 @@ body {
     font-size: var(--paragraph-font);
 }
 
+.paragraph-l {
+    font-size: var(--paragraph-l-font);
+}
+
 .paragraph-m {
     font-size: var(--paragraph-m-font);
 }
@@ -85,7 +116,7 @@ body {
 }
 
 .introduction-container {
-    padding: 100px 0px 0px 0px;
+    /* padding: 100px 0px 0px 0px; */
     align-items: center;
 }
 
@@ -97,11 +128,14 @@ body {
 .about-container,
 .projects-container,
 .resume-container,
-.contact-container,
-.case-study-container {
+.contact-container {
     padding-top: 100px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.header-image > img {
+    margin-top: 100px;
 }
 
 .intro-section {
@@ -109,8 +143,10 @@ body {
 }
 
 .introduction-container {
-    /* background-color: var(--brand); */
-    background: linear-gradient(var(--brand), #f2e5f3);
+    /* background-color: var(--brand);
+    background: linear-gradient(var(--brand), #f2e5f3); */
+    /* background: #2b2929;
+    background: black; */
 }
 
 .container-border {

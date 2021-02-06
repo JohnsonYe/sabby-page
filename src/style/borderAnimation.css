@@ -1,7 +1,12 @@
 .border-container {
     width: 685px;
-    height: 400px;
-    box-shadow: 5px 10px 8px #888888;
+    height: 375px;
+    /* box-shadow: 5px 10px 8px #888888; */
+}
+
+.sub-image-container > img {
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes rotate {
@@ -20,14 +25,14 @@
 }
 
 .rainbow .sub-image-container {
-    background-image: url('../images/demo.png');
+    /* background-image: url('../images/demo.png'); */
     background-size:cover;
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
 }
 .rainbow::before {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     content: '';
     position: absolute;
     z-index: -2;
@@ -42,14 +47,14 @@
     background-image:   linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
                         linear-gradient(#F9F9F9, #F9F9F9),
                         linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82),
-                        linear-gradient(#F9F9F9, #F9F9F9);
+                        linear-gradient(#F9F9F9, #F9F9F9); */
 
 }
 
 .border-container:hover .rainbow::before {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     -webkit-animation: rotate 1s ease-in-out;
-    animation: rotate 1s ease-in-out;
+    animation: rotate 1s ease-in-out; */
 }
 
 .border-container:hover {
@@ -57,7 +62,7 @@
 }
 
 .rainbow::after {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     content: '';
     position: absolute;
     z-index: -1;
@@ -65,5 +70,5 @@
     top: 6px;
     width: calc(100% - 12px);
     height: calc(100% - 12px);
-    background: #F9F9F9;
+    background: #F9F9F9; */
 }

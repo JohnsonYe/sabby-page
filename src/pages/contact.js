@@ -30,7 +30,7 @@ const Contact = function() {
     }
     
     return (
-        <div className="contact-container">
+        <div className="contact-container"  id="container-id">
             <div className="contact-form">
                 <div className="contact-header header">
                     Contact
@@ -60,7 +60,7 @@ const Contact = function() {
                         </div>
 
                         <div className="form-submit">
-                            <input type="submit" className="btn btn-submit" id="form-submit-btn" value="SEND"/>
+                            <input type="submit" className="btn btn-submit box-shadow" id="form-submit-btn" value="SEND"/>
                             <div className={"sender " + sent}></div>
                             <span className={"form-send success " + success}>sent <i className="fas fa-check"></i></span>
                             <span className={"form-send fail " + fail}>Fail to send! Please try again.</span>
