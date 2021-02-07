@@ -9,42 +9,13 @@ import competitor_1 from '../../images/ghtb/ding-tea.png';
 import competitor_2 from '../../images/ghtb/happy_lemon.png';
 import competitor_3 from '../../images/ghtb/share_tea.png';
 
-// import MID_FI_1 from '../../images/ghtb/MID_FI/1.png';
-// import MID_FI_2 from '../../images/ghtb/MID_FI/2.png';
-// import MID_FI_3 from '../../images/ghtb/MID_FI/3.png';
-// import MID_FI_4 from '../../images/ghtb/MID_FI/4.png';
-// import MID_FI_5 from '../../images/ghtb/MID_FI/5.png';
-// import MID_FI_6 from '../../images/ghtb/MID_FI/6.png';
-// import MID_FI_7 from '../../images/ghtb/MID_FI/7.png';
-// import MID_FI_8 from '../../images/ghtb/MID_FI/8.png';
-// import MID_FI_9 from '../../images/ghtb/MID_FI/9.png';
-// import MID_FI_10 from '../../images/ghtb/MID_FI/10.png';
+
 import MID_FI1 from '../../images/ghtb/MID_FI/mid_fi1.png';
 import MID_FI2 from '../../images/ghtb/MID_FI/mid_fi2.png';
 
 import HI_FI_1 from '../../images/ghtb/HI_FI_DESKTOP/hi_fi1.png';
 import HI_FI_2 from '../../images/ghtb/HI_FI_DESKTOP/hi_fi2.png';
-// import HI_FI_3 from '../../images/ghtb/HI_FI_DESKTOP/3.png';
-// import HI_FI_4 from '../../images/ghtb/HI_FI_DESKTOP/4.png';
-// import HI_FI_5 from '../../images/ghtb/HI_FI_DESKTOP/5.png';
-// import HI_FI_6 from '../../images/ghtb/HI_FI_DESKTOP/6.png';
-// import HI_FI_7 from '../../images/ghtb/HI_FI_DESKTOP/7.png';
-// import HI_FI_8 from '../../images/ghtb/HI_FI_DESKTOP/8.png';
-// import HI_FI_9 from '../../images/ghtb/HI_FI_DESKTOP/9.png';
-// import HI_FI_10 from '../../images/ghtb/HI_FI_DESKTOP/10.png';
-// import HI_FI_1 from '../../images/ghtb/HI_FI_DESKTOP/hi_fi1.png';
-// import HI_FI_2 from '../../images/ghtb/HI_FI_DESKTOP/hi_fi2.png';
 
-// import HI_FI_1_MOBILE from '../../images/ghtb/HI_FI_MOBILE/1.png';
-// import HI_FI_2_MOBILE from '../../images/ghtb/HI_FI_MOBILE/2.png';
-// import HI_FI_3_MOBILE from '../../images/ghtb/HI_FI_MOBILE/3.png';
-// import HI_FI_4_MOBILE from '../../images/ghtb/HI_FI_MOBILE/4.png';
-// import HI_FI_5_MOBILE from '../../images/ghtb/HI_FI_MOBILE/5.png';
-// import HI_FI_6_MOBILE from '../../images/ghtb/HI_FI_MOBILE/6.png';
-// import HI_FI_7_MOBILE from '../../images/ghtb/HI_FI_MOBILE/7.png';
-// import HI_FI_8_MOBILE from '../../images/ghtb/HI_FI_MOBILE/8.png';
-// import HI_FI_9_MOBILE from '../../images/ghtb/HI_FI_MOBILE/9.png';
-// import HI_FI_10_MOBILE from '../../images/ghtb/HI_FI_MOBILE/10.png';
 import HI_FI_1_MOBILE from '../../images/ghtb/HI_FI_MOBILE/hi_fi1.png';
 import HI_FI_2_MOBILE from '../../images/ghtb/HI_FI_MOBILE/hi_fi2.png';
 

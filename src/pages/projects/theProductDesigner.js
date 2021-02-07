@@ -5,31 +5,15 @@ import EMPATHY_MAP from '../../images/tpd/empathy_map.png';
 import USER_PERSONA from '../../images/tpd/persona.png';
 import WORKFLOW_1 from '../../images/tpd/taskflow_1.jpg';
 import WORKFLOW_2 from '../../images/tpd/taskflow_2.jpg';
-import LO_FI_1 from '../../images/tpd/LO_FI/1.JPG';
-import LO_FI_2 from '../../images/tpd/LO_FI/2.JPG';
+import LO_FI_1 from '../../images/tpd/LO_FI/1.jpeg';
+import LO_FI_2 from '../../images/tpd/LO_FI/2.jpeg';
 
-// import MID_FI_1 from '../../images/tpd/MID_FI/1.png';
-// import MID_FI_2 from '../../images/tpd/MID_FI/2.png';
-// import MID_FI_3 from '../../images/tpd/MID_FI/3.png';
-// import MID_FI_4 from '../../images/tpd/MID_FI/4.png';
-// import MID_FI_5 from '../../images/tpd/MID_FI/5.png';
-// import MID_FI_6 from '../../images/tpd/MID_FI/6.png';
+
 import MID_FI from '../../images/tpd/MID_FI/mid_fi.png';
 
-// import HI_FI_1 from '../../images/tpd/HI_FI/1.png';
-// import HI_FI_2 from '../../images/tpd/HI_FI/2.png';
-// import HI_FI_3 from '../../images/tpd/HI_FI/3.png';
-// import HI_FI_4 from '../../images/tpd/HI_FI/4.png';
-// import HI_FI_5 from '../../images/tpd/HI_FI/5.png';
-// import HI_FI_6 from '../../images/tpd/HI_FI/6.png';
 import HI_FI from '../../images/tpd/HI_FI/hi_fi.png';
 
-// import Final_Hi_Fi_1 from '../../images/tpd/Final_Hi_Fi/1.png';
-// import Final_Hi_Fi_2 from '../../images/tpd/Final_Hi_Fi/2.png';
-// import Final_Hi_Fi_3 from '../../images/tpd/Final_Hi_Fi/3.png';
-// import Final_Hi_Fi_4 from '../../images/tpd/Final_Hi_Fi/4.png';
-// import Final_Hi_Fi_5 from '../../images/tpd/Final_Hi_Fi/5.png';
-// import Final_Hi_Fi_6 from '../../images/tpd/Final_Hi_Fi/6.png';
+
 import Final_Hi_Fi from '../../images/tpd/Final_Hi_Fi/final.png';
 
 import UI_KIT from '../../images/tpd/UI_KIT.png';
@@ -42,7 +26,7 @@ const theProductDesigner = function() {
         ],
         statement: 'To build a responsive mobile app from scratch.  This application should offer users to use features like apply for a job, share work, and sign up for events all related to product design.',
         role: 'UX/UI Designer with total use of 80 hrs. This is not a real world project!',
-        duration: '2 weeks',
+        duration: 'https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=661%3A1&viewport=797%2C424%2C0.2597874701023102&scaling=min-zoom',
         note: 'This is a fictional project for Ux boot camp.',
         prototype: "https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=661%3A1&viewport=797%2C424%2C0.2597874701023102&scaling=min-zoom"
     };
@@ -151,7 +135,8 @@ const theProductDesigner = function() {
                     <span className="overview-text">{overview.role}</span>
                 </div>
                 <div className="sectionBody duration">
-                    <div className="view-prototype-button"><span>View Prototype Here</span></div>
+                    <div className="view-prototype-button" onClick={() => { window.open(overview.prototype, "_blank") }}><span>View Prototype Here</span></div>
+                    {/* <div className="view-prototype-button"><span>View Prototype Here</span></div> */}
                     {/* <a href={overview.prototype} target="_blank"><div className="view-prototype">View Prototype Here</div></a> */}
                 </div>
             </div>
@@ -313,12 +298,14 @@ const theProductDesigner = function() {
     const generateDesign = function () {
         function generate (name, description, images, type) {
             var d = (description === "") ? <></> : <div className="overview-text">{description}</div>;
+            let style = type == 'wireframe' ? { width: 'calc(90vw / 2)'} : {};
+            let lowFiStyle = type == 'wireframe' ? { width: '100%', height: '100%'} : {};
             return (
                 <div className="sectionBody design">
                     <label>{name}:</label>
                     {d}
                     <div className="research-image-group">
-                        {images.map((x,i)=>{return (<div className={type+"-image"} key={type+'-'+i}><img src={x}></img></div>)})}
+                        {images.map((x,i)=>{return (<div className={type+"-image"} key={type+'-'+i} style={lowFiStyle}><img src={x} style={style}></img></div>)})}
                     </div>
                 </div>
             );

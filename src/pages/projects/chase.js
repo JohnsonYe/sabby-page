@@ -6,34 +6,16 @@ import WORKFLOW from '../../images/chase/taskflow.jpg';
 
 import competitor from '../../images/chase/competitor_analysis.png';
 
-import LO_FI_1 from '../../images/chase/LO_FI/1.JPG';
-import LO_FI_2 from '../../images/chase/LO_FI/2.JPG';
-import LO_FI_3 from '../../images/chase/LO_FI/3.JPG';
+import LO_FI_1 from '../../images/chase/LO_FI/1.jpeg';
+import LO_FI_2 from '../../images/chase/LO_FI/2.jpeg';
+import LO_FI_3 from '../../images/chase/LO_FI/3.jpeg';
 
-// import MID_FI_1 from '../../images/chase/MID_FI/1.png';
-// import MID_FI_2 from '../../images/chase/MID_FI/2.png';
-// import MID_FI_3 from '../../images/chase/MID_FI/3.png';
-// import MID_FI_4 from '../../images/chase/MID_FI/4.png';
-// import MID_FI_5 from '../../images/chase/MID_FI/5.png';
-// import MID_FI_6 from '../../images/chase/MID_FI/6.png';
-// import MID_FI_7 from '../../images/chase/MID_FI/7.png';
 import MID_FI from '../../images/chase/MID_FI/mid_fi.png';
 
-// import HI_FI_2 from '../../images/chase/HI_FI/2.png';
-// import HI_FI_3 from '../../images/chase/HI_FI/3.png';
-// import HI_FI_1 from '../../images/chase/HI_FI/1.png';
-// import HI_FI_4 from '../../images/chase/HI_FI/4.png';
-// import HI_FI_5 from '../../images/chase/HI_FI/5.png';
-// import HI_FI_6 from '../../images/chase/HI_FI/6.png';
-// import HI_FI_7 from '../../images/chase/HI_FI/7.png';
-// import HI_FI_8 from '../../images/chase/HI_FI/8.png';
-// import HI_FI_9 from '../../images/chase/HI_FI/9.png';
-// import HI_FI_10 from '../../images/chase/HI_FI/10.png';
 import HI_FI1 from '../../images/chase/HI_FI/hi-fi1.png';
 import HI_FI2 from '../../images/chase/HI_FI/hi-fi2.png';
 
 
-import Carousel_Images from '../../components/Carousel';
 
 const chase = function() {
     const overview = {
@@ -157,7 +139,8 @@ const chase = function() {
                     <span className="overview-text">{overview.role}</span>
                 </div>
                 <div className="sectionBody duration">
-                    <div className="view-prototype-button"><span>View Prototype Here</span></div>
+                    {/* <div className="view-prototype-button"><span>View Prototype Here</span></div> */}
+                    <div className="view-prototype-button" onClick={() => { window.open(overview.prototype, "_blank") }}><span>View Prototype Here</span></div>
                     {/* <label>Duration: </label>
                     <span className="overview-text">{overview.duration}</span> */}
                 </div>
@@ -350,6 +333,11 @@ const chase = function() {
             var d = (description === "") ? <></> : <div className="overview-text">{description}</div>;
             let style = (type === "hi_fi_wireframe") ? { flexWrap: "wrap" }: {};
             let marginStyle = (type === "mid_fi_wireframe") ? { marginTop: "0px", maxWidth: "95vw" } : {};
+
+            if (type == 'wireframe') {
+                marginStyle = { width: 'calc(90vw / 3)' };
+            }
+            
             return (
                 <div className="sectionBody design">
                     <label>{name}:</label>
