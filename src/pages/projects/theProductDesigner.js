@@ -5,8 +5,8 @@ import EMPATHY_MAP from '../../images/tpd/empathy_map.png';
 import USER_PERSONA from '../../images/tpd/persona.png';
 import WORKFLOW from '../../images/tpd/taskflow.jpg';
 // import WORKFLOW_2 from '../../images/tpd/taskflow_2.jpg';
-import LO_FI_1 from '../../images/tpd/LO_FI/1.jpeg';
-import LO_FI_2 from '../../images/tpd/LO_FI/2.jpeg';
+import LO_FI_1 from '../../images/tpd/LO_FI/1.png';
+import LO_FI_2 from '../../images/tpd/LO_FI/2.png';
 
 
 import MID_FI from '../../images/tpd/MID_FI/mid_fi.png';

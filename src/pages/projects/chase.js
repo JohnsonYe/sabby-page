@@ -6,9 +6,10 @@ import WORKFLOW from '../../images/chase/taskflow.jpg';
 
 import competitor from '../../images/chase/competitor_analysis.png';
 
-import LO_FI1 from '../../images/chase/LO_FI/1.jpeg';
-import LO_FI2 from '../../images/chase/LO_FI/2.jpeg';
-import LO_FI3 from '../../images/chase/LO_FI/3.jpeg';
+
+import LO_FI_1 from '../../images/chase/LO_FI/lofi_1.jpeg';
+import LO_FI_2 from '../../images/chase/LO_FI/lofi_2.jpeg';
+import LO_FI_3 from '../../images/chase/LO_FI/lofi_3.jpeg';
 
 import MID_FI from '../../images/chase/MID_FI/mid_fi.png';
 
@@ -81,7 +82,7 @@ const chase = function() {
     ]
 
     const design = {
-        lo_if: [LO_FI1, LO_FI2, LO_FI3],
+        lo_fi: [LO_FI_1, LO_FI_2, LO_FI_3],
         wireframes: [MID_FI],
         hi_fi_wireframes: [HI_FI1, HI_FI2]
     }
@@ -351,7 +352,7 @@ const chase = function() {
         return (
             <div className="project-design">
                 <div className="design-title title">DESIGN</div>
-                {generate('Low fidelity wireframes', "", design.lo_if, "wireframe")}
+                {generate('Low fidelity wireframes', "", design.lo_fi, "wireframe")}
                 {generate('Mid fidelity wireframes', "", design.wireframes, "mid_fi_wireframe")}
 
                 {generate('High fidelity wireframes desktop', "", design.hi_fi_wireframes, "hi_fi_wireframe")}
