@@ -6,9 +6,9 @@ import WORKFLOW from '../../images/chase/taskflow.jpg';
 
 import competitor from '../../images/chase/competitor_analysis.png';
 
-import LO_FI_1 from '../../images/chase/LO_FI/1.jpeg';
-import LO_FI_2 from '../../images/chase/LO_FI/2.jpeg';
-import LO_FI_3 from '../../images/chase/LO_FI/3.jpeg';
+import LO_FI1 from '../../images/chase/LO_FI/1.jpeg';
+import LO_FI2 from '../../images/chase/LO_FI/2.jpeg';
+import LO_FI3 from '../../images/chase/LO_FI/3.jpeg';
 
 import MID_FI from '../../images/chase/MID_FI/mid_fi.png';
 
@@ -24,9 +24,9 @@ const chase = function() {
             "Taking all of this into account, Chase sees an opportunity to make a difference, and help Millennials with their financial challenges."
         ],
         statement: "To build a responsive budgeting feature in to Chase’s current Mobile app.  This Feature should offer users to be able to create their budget and saving goals along with setting bill payment reminders all on the Chase mobile app.",
-        role: 'My Role: UX/UI Designer with a total use of 80 hrs .',
+        role: 'UX/UI Designer with a total use of 80 hrs. This is not a real world project!',
         duration: '2 weeks',
-        note: 'This is a fictional project for UX boot camp.',
+        note: 'This is a fictional project for UX boot camp. ',
         prototype: "https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=585%3A1&viewport=769%2C305%2C0.25&scaling=min-zoom&fbclid=IwAR1UpuNVwdpvljRqhmo5BcMn87QKp9gab07gKZWfrJX3cLAZUA1TzqJj_AA"
     };
 
@@ -81,7 +81,7 @@ const chase = function() {
     ]
 
     const design = {
-        lo_if: [LO_FI_1, LO_FI_2, LO_FI_3],
+        lo_if: [LO_FI1, LO_FI2, LO_FI3],
         wireframes: [MID_FI],
         hi_fi_wireframes: [HI_FI1, HI_FI2]
     }
@@ -110,8 +110,8 @@ const chase = function() {
 
     const competitorLogoGroup = [competitor];
 
-    const space = function() {
-        return (<>&emsp;</>)
+    const breakLine = function() {
+        return (<br/>)
     }
 
     
@@ -136,7 +136,7 @@ const chase = function() {
                 </div>
                 <div className="sectionBody role" >
                     <label>My role: </label>
-                    <span className="overview-text">{overview.role}</span>
+                    <div className="overview-text">{overview.role} {breakLine()}This is not a real world project!</div>
                 </div>
                 <div className="sectionBody duration">
                     {/* <div className="view-prototype-button"><span>View Prototype Here</span></div> */}

@@ -14,13 +14,15 @@ class NavBar extends Component {
             NavFont: window.location.pathname === '/' ? '#ffffff' : '#000000',
             ballTop: window.location.pathname === '/' ? 'calc(110vh + ' : 'calc(',
             ballRatio: window.location.pathname === '/' ? 200 : 100,
-            ballNumber: 60
+            ballNumber: 60,
+            isMobile: window.innerWidth <= 760 ? true : false,
+            showMenu: false
         }
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.location.pathname !== prevProps.location.pathname) {
-            console.log("Route change!", this.props.location.pathname);
+            this.toggleMenu();
             if (this.props.location.pathname == '/') {
                 this.setState({
                     logo: brandLogo,
@@ -28,7 +30,12 @@ class NavBar extends Component {
                     ballTop: 'calc(110vh + ',
                     ballRatio: 200
                 });
-            } else {
+            } else if (this.props.location.pathname == '/projects/the-product-designer') {
+                this.setState({
+                    logo: brandLogo,
+                    NavFont: '#ffffff'
+                });
+            }else {
                 this.setState({
                     logo: brandLogoBlack,
                     NavFont: '#000000',
@@ -46,7 +53,24 @@ class NavBar extends Component {
                     actionThis.addBalls();
                 }
             }, 50);
-            
+        }
+
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.resize.bind(this));
+    }
+
+    resize() {
+        if (window.innerWidth <= 760) {
+            this.setState({isMobile: true});
+        } else {
+            this.setState({isMobile: false});
         }
     }
 
@@ -104,39 +128,42 @@ class NavBar extends Component {
         });
     }
 
-    // const [ logo, setLogo ] = useState(window.location.pathname === '/' ? brandLogo : brandLogoBlack);
-    // const [ NavFont, setNavFont ] = useState(window.location.pathname === '/' ? '#ffffff' : '#000000')
-    // const [ ballTop, setBallTop ] = useState('calc(110vh + ');
-    // const [ ballRatio, setBallRatio ] = useState(200);
-    // const [ top, setTop ] = useState('');
-    
-
-
-
-
+    toggleMenu() {
+        this.setState({showMenu: !this.state.showMenu});
+    }
 
     render() {
-    // var prevScrollpos = window.pageYOffset;
-    // window.onscroll = function() {
-    //         var currentScrollPos = window.pageYOffset;
-    //         if (prevScrollpos > currentScrollPos || currentScrollPos === prevScrollpos) {
-    //             document.getElementsByClassName("app-header")[0].style.top = "0";
-                
-    //         } else {
-    //             document.getElementsByClassName("app-header")[0].style.top = "-100px";
-    //         }
-    //         prevScrollpos = currentScrollPos;
-    // }
+        var prevScrollpos = window.pageYOffset;
+        var $this = this;
+        window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (window.location.pathname === '/' || window.location.pathname === '/projects/the-product-designer') {
+                    if (currentScrollPos <= 700) {
+                        $this.setState({ logo: brandLogo, NavFont: '#ffffff' });
+                    } else {
+                        $this.setState({logo: brandLogoBlack, NavFont: '#000000', });
+                    }
+                }
 
-
-    
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-        // console.log(window.location.pathname);
-        if (!window.location.pathname.includes("/projects")) {
-            this.addBalls();
+                if (prevScrollpos > currentScrollPos || currentScrollPos === prevScrollpos) {
+                    document.getElementsByClassName("app-header")[0].style.top = "0";
+                    
+                } else {
+                    // document.getElementsByClassName("app-header")[0].style.top = "-100px";
+                }
+                prevScrollpos = currentScrollPos;
         }
-    });
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // console.log(window.location.pathname);
+            if (!window.location.pathname.includes("/projects")) {
+                this.addBalls();
+            }
+        });
+
+        let bugerColor ={
+            backgroundColor: this.state.showMenu ? 'black' : 'white'
+        }
 
         return (
             <header className="app-header bgColor-main"> 
@@ -146,7 +173,14 @@ class NavBar extends Component {
                         <img src={this.state.logo} className="logo-image"></img>
                     </Link>
                 </div>
-                <nav className="navbar" style={{color: this.state.NavFont}}>
+
+                <div className="buger_container" style={{ display: this.state.isMobile ? 'block' : 'none'}} onClick={() => this.toggleMenu()}>
+                    <div className="hambuger" style={bugerColor}></div>
+                    <div className="hambuger" style={bugerColor}></div>
+                    <div className="hambuger" style={bugerColor}></div>
+                </div>
+
+                <nav className="navbar" style={{color: this.state.NavFont, display: this.state.isMobile && !this.state.showMenu ? 'none': 'block'}}>
                     {/* <NavLink exact to={'/about'} className="navbar-link about" onClick={()=> routeOnClick('about')}>ABOUT</NavLink>
                     <NavLink exact to={'/resume'} className="navbar-link resume" onClick={()=> routeOnClick('resume')}>RESUME</NavLink>
                     <NavLink exact to={'/contact'} className="navbar-link contact" onClick={()=> routeOnClick('contact')}>CONTACT</NavLink> */}

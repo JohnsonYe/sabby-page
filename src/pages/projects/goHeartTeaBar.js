@@ -25,7 +25,7 @@ const goHeartTeaBar = function() {
     const overview = {
         goals: ["Go Heart Tea Bar is one of the newer private owned boba shops in San Diego. The business opened right before Covid-19 and they could not get the name out of the market and sell because of the change of rules of Covid.  During this down time, they had a very hard time promoting their store while paying extra to partner with third parties to make more sales. Their website as of now is done with Wix template. The overall design and usability was not user friendly, so the business would like to redesign their responsive site and create a system to directly order drinks without a third party delivery service."],
         statement: "To build a responsive website (mobile and desktop) for users to view and shop boba directly on Go Heart Tea Bar’s site.  This platform should offer users to be able to view drink menus along with being able to order for pick-up and delivery services.",
-        role: 'My Role: UX/UI Designer with a total use of 80 hrs.',
+        role: 'UX/UI Designer with a total use of 80 hrs.',
         duration: 'https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=417%3A1456&viewport=630%2C542%2C0.25&scaling=min-zoom&fbclid=IwAR3gWNJskGDx_OQ1v-VhoiclpuCCrmT0zAlS35npwwrRwXhtTTcfjSyDI20',
         note: 'This is not a real world project!'
     };
@@ -170,7 +170,7 @@ const goHeartTeaBar = function() {
                 </div>
                 <div className="sectionBody role" >
                     <label>My role: </label>
-                    <span className="overview-text">{overview.role}</span>
+                    <div className="overview-text">{overview.role}</div>
                 </div>
 
                 <div className="sectionBody duration">

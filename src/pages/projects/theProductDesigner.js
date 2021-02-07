@@ -3,8 +3,8 @@ import tpd_overview from '../../images/tpd/tpd_overview.png';
 import competitor_analysis from '../../images/tpd/competitor_analysis.png';
 import EMPATHY_MAP from '../../images/tpd/empathy_map.png';
 import USER_PERSONA from '../../images/tpd/persona.png';
-import WORKFLOW_1 from '../../images/tpd/taskflow_1.jpg';
-import WORKFLOW_2 from '../../images/tpd/taskflow_2.jpg';
+import WORKFLOW from '../../images/tpd/taskflow.jpg';
+// import WORKFLOW_2 from '../../images/tpd/taskflow_2.jpg';
 import LO_FI_1 from '../../images/tpd/LO_FI/1.jpeg';
 import LO_FI_2 from '../../images/tpd/LO_FI/2.jpeg';
 
@@ -25,7 +25,7 @@ const theProductDesigner = function() {
             "The users of this app can create a profile with their portfolio attached. The users can also search and add other designers and companies to share experience and have private conversations. Most importantly, employers can post up jobs to hire the designers!"
         ],
         statement: 'To build a responsive mobile app from scratch.  This application should offer users to use features like apply for a job, share work, and sign up for events all related to product design.',
-        role: 'UX/UI Designer with total use of 80 hrs. This is not a real world project!',
+        role: 'UX/UI Designer with total use of 80 hrs.',
         duration: 'https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=661%3A1&viewport=797%2C424%2C0.2597874701023102&scaling=min-zoom',
         note: 'This is a fictional project for Ux boot camp.',
         prototype: "https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=661%3A1&viewport=797%2C424%2C0.2597874701023102&scaling=min-zoom"
@@ -111,6 +111,10 @@ const theProductDesigner = function() {
 
     const Final_Wireframess = [Final_Hi_Fi];
     
+    const breakLine = function() {
+        return (<br/>)
+    }
+
     const generateOverview = function () {
         const style = {
             overview_text: {
@@ -132,7 +136,7 @@ const theProductDesigner = function() {
                 </div>
                 <div className="sectionBody role" >
                     <label>My role: </label>
-                    <span className="overview-text">{overview.role}</span>
+                    <div className="overview-text">{overview.role} {breakLine()}This is not a real world project!</div>
                 </div>
                 <div className="sectionBody duration">
                     <div className="view-prototype-button" onClick={() => { window.open(overview.prototype, "_blank") }}><span>View Prototype Here</span></div>
@@ -287,8 +291,8 @@ const theProductDesigner = function() {
                     })}
                     
                     <div className="personal-image-section">
-                        <img className="task-flow-image" src={WORKFLOW_1}></img>
-                        <img className="task-flow-image" style={{marginTop: "-5px"}} src={WORKFLOW_2}></img>
+                        <img className="task-flow-image" src={WORKFLOW}></img>
+                        {/* <img className="task-flow-image" style={{marginTop: "-5px"}} src={WORKFLOW_2}></img> */}
                     </div>
                 </div>
             </div>

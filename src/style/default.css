@@ -215,32 +215,39 @@ body {
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 575px) {
+@media only screen and (max-width: 760px) {
     /* .project-list, */
     .about-container,
     .contact-container,
     .projects-container {
         width: 100%;
     }
-}
 
-@media only screen and (min-width: 576px) {
-    /* .project-list, */
-    .about-container,
-    .contact-container,
-    .projects-container {
-        width: 540px;
+    .project-list .project-item {
+        display: block;
+    }
+
+    .intro-text-section {
+        font-size: 14px;
+    }
+
+    .header-l {
+        font-size: 16px;
+    }
+
+    .header-m {
+        font-size: 14px;
+    }
+    .intro-title {
+        margin-bottom: 12px;
+    }
+
+    .intro-text-section {
+        transform: translate(0%, -50%);
     }
 }
 
-@media only screen and (min-width: 768px) {
-    /* .project-list, */
-    .about-container,
-    .contact-container,
-    .projects-container {
-        width: 720px;
-    }
-}
+
 
 @media only screen and (min-width: 992px) {
     /* .project-list, */

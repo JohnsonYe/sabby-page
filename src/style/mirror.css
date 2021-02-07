@@ -48,6 +48,15 @@
     text-align: center;
 }
 
+.project-define .personal-image-section {
+    display: flex;
+    justify-content: center;
+}
+
+.project-define .personal-image-section img {
+    width: 80vw;
+}
+
 .table-section-header th,
 .table-section-body td {
     padding: 12px;
