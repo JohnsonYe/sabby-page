@@ -7,9 +7,9 @@ import WORKFLOW from '../../images/chase/taskflow.jpg';
 import competitor from '../../images/chase/competitor_analysis.png';
 
 
-import LO_FI_1 from '../../images/chase/LO_FI/lofi_1.jpeg';
-import LO_FI_2 from '../../images/chase/LO_FI/lofi_2.jpeg';
-import LO_FI_3 from '../../images/chase/LO_FI/lofi_3.jpeg';
+import LO_FI_1 from '../../images/chase/LO_FI/lofi_1.png';
+import LO_FI_2 from '../../images/chase/LO_FI/lofi_2.png';
+import LO_FI_3 from '../../images/chase/LO_FI/lofi_3.png';
 
 import MID_FI from '../../images/chase/MID_FI/mid_fi.png';
 
@@ -405,7 +405,7 @@ const chase = function() {
             <div className="prject-header-background">
             {/* <div className="project-body-title">The Product designer</div> */}
                 <div className="header-image" style={{textAlign: "center", background: "#dcf9e7"}}>
-                    <img src={chase_casesudy_cover}/>
+                    <img src={chase_casesudy_cover} style={{marginTop: '0px'}}/>
                 </div>
             </div>
 
