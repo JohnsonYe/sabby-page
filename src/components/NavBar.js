@@ -18,11 +18,15 @@ class NavBar extends Component {
             isMobile: window.innerWidth <= 760 ? true : false,
             showMenu: false
         }
+        
+
+        this.toggleMenu = this.toggleMenu.bind(this);
+        this.hideMenu = this.hideMenu.bind(this);
     }
 
     componentDidUpdate(prevProps) {
         if (this.props.location.pathname !== prevProps.location.pathname) {
-            this.toggleMenu();
+            this.hideMenu();
             if (this.props.location.pathname == '/') {
                 this.setState({
                     logo: brandLogo,
@@ -44,17 +48,8 @@ class NavBar extends Component {
                 });
             }
             
-            var actionThis = this;
-            setTimeout(function() {
-                for (var i = 0; i < 60; i++) {
-                    actionThis.removeBall(i);
-                }
-                if (!window.location.pathname.includes("/projects")) {
-                    actionThis.addBalls();
-                }
-            }, 50);
+            this.resetBalls();
         }
-
     }
 
     componentDidMount() {
@@ -66,11 +61,31 @@ class NavBar extends Component {
         window.removeEventListener("resize", this.resize.bind(this));
     }
 
+    resetBalls() {
+        var actionThis = this;
+        setTimeout(function() {
+            for (var i = 0; i < 60; i++) {
+                actionThis.removeBall(i);
+            }
+            if (!window.location.pathname.includes("/projects")) {
+                actionThis.addBalls();
+            }
+        }, 50);
+    }
+
     resize() {
         if (window.innerWidth <= 760) {
             this.setState({isMobile: true});
         } else {
             this.setState({isMobile: false});
+        }
+        var actionThis = this;
+        if (window.innerWidth <= 760) {
+            setTimeout(function() {
+                for (var i = 0; i < 60; i++) {
+                    actionThis.removeBall(i);
+                }
+            }, 50);
         }
     }
 
@@ -132,6 +147,10 @@ class NavBar extends Component {
         this.setState({showMenu: !this.state.showMenu});
     }
 
+    hideMenu() {
+        this.setState({showMenu: false});
+    }
+
     render() {
         var prevScrollpos = window.pageYOffset;
         var $this = this;
@@ -159,6 +178,11 @@ class NavBar extends Component {
             if (!window.location.pathname.includes("/projects")) {
                 this.addBalls();
             }
+  
+            document.getElementsByClassName("main-container")[0].addEventListener('click', function() {
+                $this.hideMenu();
+            })
+            
         });
 
         let bugerColor ={

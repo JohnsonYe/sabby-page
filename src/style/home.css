@@ -87,20 +87,27 @@
     width: 90%;
     height: 90%
 } */
-@media only screen and (min-width: 1200px) {
-    /* .project-list .project-item:nth-child(2) .right {
-        order: 1;
-    }
-    
-    .project-list .project-item:nth-child(2) a {
-        order: 2;
-    } */
-}
+
 
 @media only screen and (max-width: 1199px) {
     .border-container {
         margin-bottom: 100px;
     }
+}
+
+@media only screen and (max-width: 760px) {
+    .project-item {
+        padding: 0;
+    }
+
+    .border-container {
+        margin-bottom: 0px;
+    }
+
+    .class-info .project-title.header-l {
+        font-size: 32px;
+    }
+
 }
 
 @media only screen and (max-width: 475px) {

@@ -1,0 +1,5 @@
+@media only screen and (max-width: 760px) {
+    .case-study-container.chase .header-image > img {
+        margin-top: 50px !important;
+    }
+}

@@ -16,6 +16,7 @@ import MID_FI from '../../images/chase/MID_FI/mid_fi.png';
 import HI_FI1 from '../../images/chase/HI_FI/hi-fi1.png';
 import HI_FI2 from '../../images/chase/HI_FI/hi-fi2.png';
 
+import '../../style/chase.css';
 
 
 const chase = function() {

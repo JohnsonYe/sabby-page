@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageBackground from '../images/personal-image-min.jpg';
 import '../style/about.css';
+// import FullScreenImageContainer from '../components/FullScreenImageContainer';
 
 const About = function() {
     const descriptions = [
@@ -18,6 +19,10 @@ const About = function() {
             </div>
         );
     }
+
+    // function openImage() {
+        
+    // }
 
     return (
         <div className="about-container" id="container-id">
@@ -43,31 +48,6 @@ const About = function() {
             </div>
         </div>
     )
-
-    // return (
-    //     <div className="about-container">
-    //         <div className="about-section-1">
-    //             <div className="about-image">
-    //                 <img src={ImageBackground}/>
-    //             </div>
-    //             <div className="about-name">
-    //                 {/* <div className="header-m">About Me</div> */}
-    //                 <div className="header-xxl">About Sabrina</div>
-    //                 <div className="header-detail">
-    //                     <div className="header-s">Current location: Los Angeles, CA</div>
-    //                     <div className="header-s">Mother of 2 lovely cats!</div>
-    //                     <div className="header-s">Fun fact: I am panti-lingual!</div>
-    //                 </div>
-    //             </div>
-    //         </div>
-
-    //         <div className="about-section-2">
-    //             <div className="about-description">
-    //                 {descriptions.map((description, i) => { return generateDescription(description, i); })}
-    //             </div>
-    //         </div>
-    //     </div>
-    // )
 };
 
 export default About;
