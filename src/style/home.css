@@ -17,7 +17,34 @@
     left: 0;
     width: 100%;
     height: 100%;
-} 
+}
+
+.christmaxTree {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.newContainerForChristmaxtree {
+    background-color: transparent;
+    height: 800px;
+    position: relative
+}
+
+.tangerine {
+    font-family: Tangerine;
+}
+
+.header-xl.tangerine {
+    font-size: 70px;
+}
+
+.header-xxl.tangerine {
+    font-size: 100px;
+}
 
 .project-item .right {
     /* width: 450px; */
@@ -32,7 +59,7 @@
 
 .intro-title {
     margin-bottom: 35px;
-    text-align: center;
+    text-align: left;
 }
 
 .intro-text-section {
@@ -83,15 +110,25 @@
     margin: 0 5% 0 2%;
 }
 
-/* .project-item:first-child .sub-image-container img {
-    width: 90%;
-    height: 90%
-} */
+.treebase {
+    width: 50px;
+    height: 100px;
+    background-color: #2f4436;
+    border-radius: 4px;
+    margin: 0 auto;
+}
 
+.treeleaf {
+    color: #42692f;
+}
 
 @media only screen and (max-width: 1199px) {
     .border-container {
         margin-bottom: 100px;
+    }
+
+    .intro-text-section {
+        transform: translate(0%, -50%);
     }
 }
 
@@ -111,17 +148,6 @@
 }
 
 @media only screen and (max-width: 475px) {
-    /* .image-section {
-        width: 375px;
-        height: 375px;
-    } */
-
-    /* .image-section > .personal-image {
-        width: 207px;
-        height: 207px;
-        top: 84px;
-        left: 84px;
-    } */
 }
 
 @media only screen and (max-width: 374px) {

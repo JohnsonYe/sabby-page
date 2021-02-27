@@ -10,6 +10,7 @@
     --header-xl-font: 46px;
     --header-l-font: 42px;
     --header-m-font: 32px;
+    --header-28-font: 28px;
     --header-s-font: 24px;
     --sub-header-font: 36px;
     --paragraph-font: 24px;
@@ -17,6 +18,12 @@
     --paragraph-m-font: 18px;
     --link-font: 18px;
     --font-type: Cabin;
+}
+
+
+#root {
+    overflow: hidden;
+    position: relative;
 }
 
 body {
@@ -27,7 +34,7 @@ body {
 
   
     
-    background: linear-gradient(-45deg, #f5efdf, #f5e8d6, #edf8f4, #fdf2d2);
+    background: linear-gradient(-45deg, #f5efdf, #edf8f4);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
 }
@@ -213,6 +220,31 @@ body {
 
 .upper {
     text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .header-xl.tangerine {
+        font-size: 40px;
+    }
+    
+    .header-xxl.tangerine {
+        font-size: 70px;
+    }
+
+    .treebase {
+        width: 40px;
+        height: 70px;
+        background-color: #2f4436;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+
+    .newContainerForChristmaxtree {
+        background-color: transparent;
+        height: 500px;
+        position: relative
+    }
 }
 
 @media only screen and (max-width: 760px) {

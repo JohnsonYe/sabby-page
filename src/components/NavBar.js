@@ -9,12 +9,26 @@ import { withRouter } from 'react-router-dom';
 class NavBar extends Component {
     constructor() {
         super();
+        let pathnames = ["/projects/the-product-designer"];
+        let logo = pathnames.includes(window.location.pathname) ? brandLogo : brandLogoBlack;
+        let navFontColor = pathnames.includes(window.location.pathname) ? '#ffffff' : '#000000';
+        if (window.location.pathname == "/projects/the-product-designer") {
+            var navBarColor = "#545454";
+        } else if (window.location.pathname == "/projects/chase") {
+            var navBarColor = "#dcf9e7";
+        } else if (window.location.pathname == "/projects/go-heart-tea-bar") {
+            var navBarColor = "#aeaeaf";
+        } else {
+            var navBarColor = "transparent";
+        }
+
         this.state = {
-            logo: window.location.pathname === '/' ? brandLogo : brandLogoBlack,
-            NavFont: window.location.pathname === '/' ? '#ffffff' : '#000000',
+            logo: logo,
+            NavFont: navFontColor,
+            NavBarColor: navBarColor,
             ballTop: window.location.pathname === '/' ? 'calc(110vh + ' : 'calc(',
-            ballRatio: window.location.pathname === '/' ? 200 : 100,
-            ballNumber: 60,
+            ballRatio: window.location.pathname === '/' ? 300 : 100,
+            ballNumber: 30,
             isMobile: window.innerWidth <= 760 ? true : false,
             showMenu: false
         }
@@ -29,22 +43,37 @@ class NavBar extends Component {
             this.hideMenu();
             if (this.props.location.pathname == '/') {
                 this.setState({
-                    logo: brandLogo,
-                    NavFont: '#ffffff',
+                    logo: brandLogoBlack,
+                    NavFont: '#000000',
                     ballTop: 'calc(110vh + ',
-                    ballRatio: 200
+                    ballRatio: 200,
+                    NavBarColor: "transparent"
                 });
             } else if (this.props.location.pathname == '/projects/the-product-designer') {
                 this.setState({
                     logo: brandLogo,
-                    NavFont: '#ffffff'
+                    NavFont: '#ffffff',
+                    NavBarColor: "#545454"
                 });
-            }else {
+            } else if (this.props.location.pathname == '/projects/chase') {
+                this.setState({
+                    logo: brandLogoBlack,
+                    NavFont: '#000000',
+                    NavBarColor: "#dcf9e7"
+                });
+            } else if (this.props.location.pathname == '/projects/go-heart-tea-bar') {
+                this.setState({
+                    logo: brandLogoBlack,
+                    NavFont: '#000000',
+                    NavBarColor: "#aeaeaf"
+                });
+            } else {
                 this.setState({
                     logo: brandLogoBlack,
                     NavFont: '#000000',
                     ballTop: 'calc(',
-                    ballRatio: 100
+                    ballRatio: 100,
+                    NavBarColor: "transparent"
                 });
             }
             
@@ -117,13 +146,14 @@ class NavBar extends Component {
             ball.setAttribute('ref', 'balRef');
             ball.style.background = colors[Math.floor(Math.random() * colors.length)];
             ball.style.left = `${Math.floor(Math.random() * 100)}vw`;
-            ball.style.top = `${this.state.ballTop}${Math.floor(Math.random() * this.state.ballRatio)}vh)`;
+            // ball.style.top = `${this.state.ballTop}${Math.floor(Math.random() * this.state.ballRatio)}vh)`;
+            ball.style.top = `${Math.floor(Math.random() * this.state.ballRatio)}vh`;
             ball.style.transform = `scale(${Math.random()})`;
-            ball.style.width = `${Math.random()}em`;
+            ball.style.width = `${Math.random()+2}em`;
             ball.style.height = ball.style.width;
+            ball.style.position = "absolute";
             
             balls.push(ball);
-            // document.body.append(ball);
             document.getElementById(ele_id).append(ball);
         }
 
@@ -156,12 +186,8 @@ class NavBar extends Component {
         var $this = this;
         window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
-                if (window.location.pathname === '/' || window.location.pathname === '/projects/the-product-designer') {
-                    if (currentScrollPos <= 700) {
-                        $this.setState({ logo: brandLogo, NavFont: '#ffffff' });
-                    } else {
-                        $this.setState({logo: brandLogoBlack, NavFont: '#000000', });
-                    }
+                if (window.location.pathname === '/projects/the-product-designer') {
+                    $this.setState({ logo: brandLogo, NavFont: '#ffffff' });
                 }
 
                 if (prevScrollpos > currentScrollPos || currentScrollPos === prevScrollpos) {
@@ -186,11 +212,11 @@ class NavBar extends Component {
         });
 
         let bugerColor ={
-            backgroundColor: this.state.showMenu ? 'black' : 'white'
+            backgroundColor: this.state.showMenu ? 'black' : 'black'
         }
 
         return (
-            <header className="app-header bgColor-main"> 
+            <header className="app-header bgColor-main" style={{backgroundColor: this.state.NavBarColor}}> 
                 <div className="nav-link nav-logo">
                     {/* <Link to={'/'} className="nav-link" onClick={()=> routeOnClick('home')}> */}
                     <Link to={'/'} className="nav-link">

@@ -1,0 +1,510 @@
+
+.overviewContainer,
+.researcGoalListContainer {
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 400px) {
+    .overviewContainer {
+        width: calc(100% - 20px);
+    }
+
+    .overviewFlexContainer,
+    .tpd-Goal {
+        flex-wrap: wrap;
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: 100%;
+    }
+
+    .interviewerList {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .overviewContainer {
+        width: calc(100% - 20px);
+    }
+
+    .overviewFlexContainer,
+    .tpd-Goal {
+        flex-wrap: wrap;
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: 100%;
+    }
+
+    .interviewerList {
+        flex-wrap: wrap;
+    }
+}
+    
+@media screen and (min-width: 768px) {
+    .overviewContainer {
+        width: 538px;
+    }
+
+    .overviewFlexContainer,
+    .tpd-Goal {
+        flex-wrap: wrap;
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: 100%;
+    }
+
+    .researchGoalItem .ItemIcon, 
+    .researchGoalItem .ItemText {
+        padding-left: 32px;
+    }
+
+    .interviewerList {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .overviewContainer {
+        width: 662px;
+    }
+
+    .overviewFlexContainer,
+    .tpd-Goal {
+        flex-wrap: wrap;
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: calc(100% / 2);
+    }
+
+    .researchGoalItem .ItemIcon, 
+    .researchGoalItem .ItemText {
+        padding-left: 32px;
+    }
+
+    .interviewerList {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .overviewContainer,
+    .researchGoalSectionContainer {
+        width: 950px;
+    }
+
+    .researcGoalListContainer {
+        width: 900px;
+    }
+
+    .overviewFlexItem,
+    .goalRoleWrapper .goalWrapper,
+    .goalRoleWrapper .roleWrapper {
+        width: calc(800px / 2);
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: calc(100% / 2);
+    }
+
+    .researchGoalItem .ItemIcon, 
+    .researchGoalItem .ItemText {
+        padding-left: 32px;
+    }
+
+    .interviewerList {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .overviewContainer,
+    .researchGoalSectionContainer {
+        width: 1250px;
+    }
+
+    .researchGoalSectionContainer {
+        width: 1090px;
+    }
+    /* .researcGoalListContainer {
+        width: 1050px;
+    } */
+
+    .overviewFlexItem,
+    .goalRoleWrapper .goalWrapper,
+    .goalRoleWrapper .roleWrapper {
+        width: calc(1000px / 2);
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: calc(100% / 2);
+    }
+
+    .interviewerList {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .overviewContainer {
+        width: 1590px;
+    }
+
+    .researchGoalSectionContainer {
+        width: 1090px;
+    }
+
+    /* .researcGoalListContainer {
+        width: 1250px;
+    } */
+
+    .overviewFlexItem,
+    .goalRoleWrapper .goalWrapper,
+    .goalRoleWrapper .roleWrapper {
+        width: calc(1450px / 2);
+    }
+
+    .researchGoalItem {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: calc(100% / 2);
+    }
+
+    .interviewerList {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width: 3840px) {
+    .overviewContainer {
+        width: 3410px;
+    }
+
+    .researchGoalSectionContainer {
+        width: 2880px;
+    }
+
+    .overviewFlexItem,
+    .goalRoleWrapper .goalWrapper,
+    .goalRoleWrapper .roleWrapper {
+        width: calc(3210px / 2);
+    }
+
+    .researchGoalItem {
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    .overviewFlexItem.goalAndRole {
+        width: calc(100% / 2);
+    }
+
+    .interviewerList {
+        flex-wrap: nowrap;
+    }
+}
+
+.headerImage {
+    width: 100%;
+}
+
+.caseStudySection:nth-child(2) {
+    padding: 100px 0;
+}
+
+.overviewFlexContainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.overviewFlexTitle {
+    font-size: 32px;
+}
+
+.overviewFlexText,
+.researchGoalAnalysis,
+.researcGoalListContainer,
+.rdescriptionText {
+    font-size: 18px !important;
+    line-height: 36px;
+}
+
+.researchFinding {
+    font-size: 18px !important;
+    line-height: 36px;
+}
+
+.goalRoleWrapper {
+    text-align: left;
+}
+
+.overviewContainer.tpd-Goal {
+    height: 100vh;
+}
+
+.overLabel {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.centerWrapper {
+    position: relative;
+    height: 100vh;
+}
+
+.goalRoleWrapper,
+.overviewPrototypeWrapper {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.goalRoleWrapper .goalWrapper,
+.goalRoleWrapper .roleWrapper,
+.overviewPrototypeWrapper .view-prototype-button,
+.researchGoalSectionContainer {
+    margin: 0 auto;
+}
+
+.overviewPrototypeWrapper .view-prototype-button {
+    top: 50px;
+}
+
+.researchGoalItem {
+    text-align: left;
+}
+
+.researchGoalItem .ItemIcon i {
+    color: #7FE2C5;
+}
+
+.researcGoalListContainer {
+    padding: 0 0 50px 0;
+}
+
+/* Research Title background section */
+
+.caseStudySubSection.researchGoal {
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0 0 0;
+    /* z-index: -1; */
+}
+
+/* .caseStudySubSection.researchGoal::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.65);
+    z-index: -1;
+} */
+
+.caseStudySubSection * {
+    /* z-index: 1; */
+}
+
+.interviewerList {
+    display: flex;
+    justify-content: center;
+}
+
+.interviewerListItem {
+    height: 100%;
+}
+
+table, tr, td, th {
+    border: none;
+}
+
+.researchGoalAnalysis {
+    font-size: var(--paragraph-font);
+    /* margin-bottom: 5px; */
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.researchGoalHeading {
+    margin-bottom: 0px;
+}
+
+.interviewerSection {
+    margin: 50px;
+}
+
+.sectionSubheader {
+    font-size: var(--header-28-font);
+}
+
+.box-shadow {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.testSectionIconSize {
+    color: #7FE2C5;
+    font-size: 18px;
+    padding: 0 5px;
+}
+
+.testGoalListUL,
+.researchGoalItemUL {
+    list-style: none;
+    padding: 0;
+}
+
+
+.testGoalList,
+.researchGoalItem {
+    padding-left: 1.3em;
+}
+
+.testGoalList:before,
+.researchGoalItem::before {
+    content: "\f058"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+    color: #7FE2C5
+}
+
+.sectionTag {
+    padding: 100px 0;
+}
+
+
+
+.divider
+{
+	position: relative;
+	margin-top: 90px;
+	height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-arrow-down:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: #4E4C4C;
+	border-bottom: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}
+
+
+
+
+.caseStudySection {
+    text-align: center;
+}
+
+.overviewGoalRole {
+    background-color: rgb(165 165 165/24%)
+}
+
+.overviewContainer .overviewFlexItem {
+    padding: 100px 0;
+}
+
+
+.view-prototype-button {
+    width: 200px;
+    height: 60px;
+    background: #f3f0f1;
+    position: relative;
+    background: #f3f0f1;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    margin-top: 32px;
+}
+.view-prototype-button span {
+    line-height: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: semibold;
+}
+.view-prototype-button:first-child {
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+.view-prototype-button:first-child:hover {
+    opacity: 0.7;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.view-prototype-button:first-child:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+}
+
+.researchGoalHeading {
+    /* height: 100vh; */
+    font-size: var(--header-28-font);
+}
+
+.primaryResearch {
+    color: var(--text);
+}

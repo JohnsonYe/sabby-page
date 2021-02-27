@@ -1,0 +1,19 @@
+.switchComponentwrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.switchArrow {
+    padding: 12px;
+}
+
+.switchComponentName,
+.switchArrow {
+    font-size: 18px;
+}
+
+.leftSwitchComponent,
+.rightSwitchComponent {
+    text-decoration: none;
+}

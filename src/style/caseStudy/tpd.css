@@ -1,0 +1,60 @@
+.tpd-Cover,
+.tpd-Goal .overviewPrototype
+{
+    background-color: #545454;
+}
+
+/* 
+.caseStudySection {
+    text-align: center;
+}
+
+.overviewGoalRole {
+    background-color: rgb(165 165 165/24%)
+}
+
+.overviewContainer .overviewFlexItem {
+    padding: 100px 0;
+}
+
+
+.view-prototype-button {
+    width: 200px;
+    height: 60px;
+    background: #f3f0f1;
+    position: relative;
+    background: #f3f0f1;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    margin-top: 32px;
+}
+.view-prototype-button span {
+    line-height: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: semibold;
+}
+.view-prototype-button:first-child {
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+
+}
+.view-prototype-button:first-child:hover {
+    opacity: 0.7;
+    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.view-prototype-button:first-child:active {
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+}
+
+.researchGoalHeading {
+    font-size: var(--header-28-font);
+}
+
+.primaryResearch {
+    color: var(--text);
+} */
