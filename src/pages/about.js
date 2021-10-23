@@ -5,7 +5,7 @@ import '../style/about.css';
 
 const About = function() {
     const descriptions = [
-        "Hello! My name is Sabrina and I am a product designer from San Diego, California. I graduated from California State University Fullerton with a Japanese/Linguistic Major. I was borned in XinJiang, China and immigrated to the U.S. when I was 11 years old. I always loved exploring different cultures, histories, and languages. In my free time, I like to travel, study ancient history and play with my two cats! (Mochi & Milky)",
+        "Hello! My name is Sabrina and I am a product designer from Seattle, Washington. I graduated from California State University Fullerton with a Japanese/Linguistic Major. I was borned in XinJiang, China and immigrated to the U.S. when I was 11 years old. I always loved exploring different cultures, histories, and languages. In my free time, I like to travel, study ancient history and play with my two cats! (Mochi & Milky)",
         
         "Before my product design journey started, I was studying for my court interpreting certificates. One day while I was talking to a friend, he randomly mentioned product design. I went home and did some research about it, and then here I am! I became a product designer. I was miserable for a long time not knowing what to do, but now I am glad that I found product design as a career. I can not wait to become a strong designer who uses research and empathy to create easy to use and beautiful user experiences!",
 
@@ -34,7 +34,7 @@ const About = function() {
                     {/* <div className="header-m">About Me</div> */}
                     <div className="header-xxl">About Sabrina</div>
                     <div className="header-detail">
-                        <div className="header-s">Current location: Los Angeles, CA</div>
+                        <div className="header-s">Current location: Seattle, WA</div>
                         <div className="header-s">Mother of 2 lovely cats</div>
                         <div className="header-s">Fun fact: I am panti-lingual</div>
                     </div>
