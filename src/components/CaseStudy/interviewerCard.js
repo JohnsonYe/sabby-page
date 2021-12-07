@@ -10,7 +10,10 @@ export default function({interviewer, key}) {
                 <div className="cardTitle"><h2>{interviewer.name}</h2></div>
                 <div className="cardIcon"><i className={genderClass} style={{color: gender}}></i></div>
                 <div className="cardRole title title--epic" style={{backgroundColor: gender}}>{interviewer.role}</div>
-                <div className="cardAge" style={{backgroundColor: gender}}>Age: {interviewer.age}</div>
+                { interviewer.age != null
+                    ? <div className="cardAge" style={{backgroundColor: gender}}>Age: {interviewer.age}</div>
+                    : <div className="cardAge" style={{backgroundColor: gender}}>Major: {interviewer.major}</div>
+                }
             </div>    
         </div>
     )   

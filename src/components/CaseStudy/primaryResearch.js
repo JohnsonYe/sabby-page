@@ -17,7 +17,7 @@ export default function({className, research}) {
                 }}>
                 <p className="researchGoalHeading">User interviews:</p>
                 <p className="researchGoalAnalysis">{research.primaryResearchAnalysis}</p>
-                <InterviewerSection interviewers={research.interviewers} />
+                { research.interviewers.length != 0 && <InterviewerSection interviewers={research.interviewers} />}
 
                 <p className="researchFinding">{research.researchFindingDescription}</p>
                 <ul className="researcGoalListContainer listUL">

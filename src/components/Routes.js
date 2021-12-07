@@ -8,6 +8,7 @@ import Resume from '../pages/resume';
 import Contact from '../pages/contact';
 import Project_Mirror from '../pages/projects/mirror';
 import TheProductDesignerNewDesign from '../pages/projects/TheProductDesignerNewDesign';
+import OSWEGOStudyBudy from '../pages/projects/OswegoStudyBuddy';
 import ChaseNewDesign from '../pages/projects/chaseNewDesign';
 import GoHeartTeaBarNewDesign from '../pages/projects/goHeartTeaBarNewDesign';
 const Routes = () => {
@@ -21,6 +22,7 @@ const Routes = () => {
                 <Route exact path="/projects/go-heart-tea-bar" component={GoHeartTeaBarNewDesign}/>
                 <Route exact path="/projects/chase" component={ChaseNewDesign}/>
                 <Route exact path="/projects/the-product-designer" component={TheProductDesignerNewDesign}/>
+                <Route exact path="/projects/OSWEGO-Study-Buddy" component={OSWEGOStudyBudy}/>
                 <Route exact path="/resume" component={Resume}/>
                 <Route exact path="/contact" component={Contact}/>
             </Switch>

@@ -35,10 +35,16 @@ export default function({className, overview, image}) {
                 <div className="overviewPrototype overviewFlexItem goalAndRole">
                     <div className="centerWrapper">
                         <div className="overviewPrototypeWrapper">
-                            <div>
-                                <img style={{width: "300px"}} src={image} />
-                            </div>
-
+                            {
+                                overview.imageStyle
+                                ?
+                                    <div>
+                                        <img style={{width: overview.imageStyle.width}} src={image} />
+                                    </div>
+                                :   <div>
+                                        <img style={{width: "300px"}} src={image} />
+                                    </div>
+                            }
                             
                         </div>
                     </div>
