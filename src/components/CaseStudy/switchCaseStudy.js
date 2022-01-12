@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from 'react-router-dom';
 import '../../style/components/switchCaseStudy.css';
@@ -23,7 +22,7 @@ export default function({leftComponent, rightComponent}) {
             <div className="switchComponentwrapper">
                 <div className="leftComponentWrapper">
                     <Link to={leftComponent.path} className="leftSwitchComponent"  onClick={()=>scrollToTop()}>
-                        <i class="fa fa-angle-left switchArrow" aria-hidden="true"></i>
+                        <i className="fa fa-angle-left switchArrow" aria-hidden="true"></i>
                         <span className="switchComponentName">{leftComponent.name}</span>
                     </Link>
                 </div>
@@ -31,7 +30,7 @@ export default function({leftComponent, rightComponent}) {
                 <div className="rightComponentWrapper">
                     <Link to={rightComponent.path} className="rightSwitchComponent" onClick={()=>scrollToTop()}>
                         <span className="switchComponentName">{rightComponent.name}</span>
-                        <i class="fa fa-angle-right switchArrow" aria-hidden="true"></i>
+                        <i className="fa fa-angle-right switchArrow" aria-hidden="true"></i>
                     </Link>
                 </div>
             </div>
