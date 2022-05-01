@@ -90,7 +90,12 @@ const Home = function() {
                     )
                 })}
             </div>
-            {/* <Bobo/> */}
+            <div
+                style={{
+                    textAlign: "center",
+                    paddingBottom: "50px"
+                }}
+            ><Link to="/projects" className="more-projects-button" onClick={()=>scrollToTop()}>More Projects...</Link></div>
         </div>
     )
 };

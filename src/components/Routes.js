@@ -11,6 +11,7 @@ import TheProductDesignerNewDesign from '../pages/projects/TheProductDesignerNew
 import OSWEGOStudyBudy from '../pages/projects/OswegoStudyBuddy';
 import ChaseNewDesign from '../pages/projects/chaseNewDesign';
 import GoHeartTeaBarNewDesign from '../pages/projects/goHeartTeaBarNewDesign';
+import OSWEGOLovelyPets from '../pages/projects/OswegoLovelyPets';
 const Routes = () => {
     return (
         <div className="main-container">
@@ -22,9 +23,11 @@ const Routes = () => {
                 <Route exact path="/projects/go-heart-tea-bar" component={GoHeartTeaBarNewDesign}/>
                 <Route exact path="/projects/chase" component={ChaseNewDesign}/>
                 <Route exact path="/projects/the-product-designer" component={TheProductDesignerNewDesign}/>
-                <Route exact path="/projects/OSWEGO-Study-Buddy" component={OSWEGOStudyBudy}/>
                 <Route exact path="/resume" component={Resume}/>
                 <Route exact path="/contact" component={Contact}/>
+                {/* Oswego project */}
+                <Route exact path="/projects/OSWEGO-Study-Buddy" component={OSWEGOStudyBudy}/>
+                <Route exact path="/projects/OSWEGO-Lovely-Pets" component={OSWEGOLovelyPets}/>
             </Switch>
         </div>
     )

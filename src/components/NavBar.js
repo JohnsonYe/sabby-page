@@ -235,7 +235,7 @@ class NavBar extends Component {
                     <NavLink exact to={'/resume'} className="navbar-link resume" onClick={()=> routeOnClick('resume')}>RESUME</NavLink>
                     <NavLink exact to={'/contact'} className="navbar-link contact" onClick={()=> routeOnClick('contact')}>CONTACT</NavLink> */}
                     <NavLink exact to={'/about'} className="navbar-link about">ABOUT</NavLink>
-                    {/* <NavLink exact to={'/resume'} className="navbar-link resume">RESUME</NavLink> */}
+                    <NavLink exact to={'/projects'} className="navbar-link projects">PROJECTS</NavLink>
                     <NavLink exact to={'/contact'} className="navbar-link contact">CONTACT</NavLink>
                 </nav>
             </header>
