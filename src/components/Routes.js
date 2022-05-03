@@ -27,7 +27,7 @@ const Routes = () => {
                 <Route exact path="/contact" component={Contact}/>
                 {/* Oswego project */}
                 <Route exact path="/projects/OSWEGO-Study-Buddy" component={OSWEGOStudyBudy}/>
-                <Route exact path="/projects/OSWEGO-Lovely-Pets" component={OSWEGOLovelyPets}/>
+                <Route exact path="/projects/lovely-pets" component={OSWEGOLovelyPets}/>
             </Switch>
         </div>
     )

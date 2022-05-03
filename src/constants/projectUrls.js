@@ -38,7 +38,7 @@ export const ProjectList = [
 
     {
         name: "Oswego Lovely Pets",
-        url: "/projects/OSWEGO-Lovely-Pets",
+        url: "/projects/lovely-pets",
         image: oswego_study_buddy
     }
 ];
