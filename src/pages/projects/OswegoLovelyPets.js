@@ -62,10 +62,11 @@ export default function() {
     };
 
     const define = {
+        storyMapTitle: "User story map",
         customeDefineTaskTitle: "",
         taskflows: [],
-        taskflowDescription: "Next, I created a customer story map to list out all of the necessary steps needed for the users to use the application.",
-        customerJourneyMap: "Here I created a customer journey map to focus on the task from logging in to getting citations of a book from the library’s site.",
+        taskflowDescription: "Next, I created a user story map to list out all of the necessary steps needed for the users to use the application.",
+        customerJourneyMap: "Here I created a user story map to focus on the task from logging in to getting citations of a book from the library’s site.",
         customerJourneyMapImage: oswegoLovelyPets_customer_journey_map
     };
 

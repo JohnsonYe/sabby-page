@@ -10,6 +10,9 @@ export default function({className, define}) {
         var caseStudySectionName = "caseStudySection researchGoalSectionContainer";
         var overLabel = "overLabel";
     }
+
+    const storyMapTitle = define.storyMapTitle ? define.storyMapTitle : "Customer journey map";
+
     return (
         <div className={caseStudySectionName}>
             <div className="defineContainer researcGoalListContainer">
@@ -33,7 +36,7 @@ export default function({className, define}) {
 
                 {argNotEmpty(define.needsList) && <ListSection title="Needs" list={define.needsList}/>}
 
-                {define.customerJourneyMap && <CustomerJourneyMap title="Customer journey map" description={define.customerJourneyMap} image={define.customerJourneyMapImage}/>}
+                {define.customerJourneyMap && <CustomerJourneyMap title={storyMapTitle} description={define.customerJourneyMap} image={define.customerJourneyMapImage}/>}
             </div>
         </div>
     )

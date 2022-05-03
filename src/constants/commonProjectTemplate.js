@@ -2,17 +2,27 @@
  * 
  * OVERVIEW: Object
  *      goals: String[] || undefined
- *      statement: String
- *      duration: String
- *      note: String
- *      prototypeUrl: String
- *      projectBackground: String
- *      goal: String
- *      problemStatement: String
- *      role: String
+ *      statement: String || undefined
+ *      duration: String || undefined
+ *      note: String || undefined
+ *      prototypeUrl: String || undefined
+ *      projectBackground: String || undefined
+ *      goal: String || undefined
+ *      problemStatement: String || undefined
+ *      role: String || undefined
  * 
  * RESEARCH
- *     
+ *      goals: String[] || undefined
+ *      researchGoalAnalysis: String || undefined
+ *      primaryResearchAnalysis: String
+ *      interviewers: Object Array || undefined
+ *            {
+ *                  name: String
+ *                  age:  Number
+ *                  gender: String
+ *                  role: String
+ *             }
+ *      researchFindingDescription: String
  * EMPATHIZE
  *
  * DEFINE
