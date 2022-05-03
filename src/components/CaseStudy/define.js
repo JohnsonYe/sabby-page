@@ -16,7 +16,7 @@ export default function({className, define}) {
                 <div className={overLabel} style={{textAlign: "center"}}><p>Define</p></div>
                 <div className="" style={{padding: "0", textAlign: "left" }}>
                     <p className="researchGoalHeading kinda-bold">
-                        {define.customeDefineTaskTitle ? define.customeDefineTaskTitle : "Task flows:"}
+                        {define.customeDefineTaskTitle != null ? define.customeDefineTaskTitle : "Task flows:"}
                     </p>
                     <p className="researchGoalAnalysis">{define.taskflowDescription}</p>
                 </div>

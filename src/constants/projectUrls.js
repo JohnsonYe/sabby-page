@@ -4,6 +4,7 @@ import tpd_cover from '../images/tpd_cover.png';
 
 import mirrot_cover from '../images/mirror/mirror-mock_up.png';
 import oswego_study_buddy from '../images/oswegoStudyBuddy/test.webp';
+import lovelyPetImage from "../images/oswegoLovelyPets/COVER.webp";
 
 export const ProjectList = [    
     {
@@ -37,8 +38,8 @@ export const ProjectList = [
     },
 
     {
-        name: "Oswego Lovely Pets",
+        name: "Lovely Pets",
         url: "/projects/lovely-pets",
-        image: oswego_study_buddy
+        image: lovelyPetImage
     }
 ];

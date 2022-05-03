@@ -15,16 +15,16 @@ import '../../style/caseStudy.css';
 import '../../style/caseStudy/tpd.css';
 
 // image
-import oswegoLovelyPets_prototype_image from '../../images/oswegoStudyBuddy/test.webp';
-import tpd_competitor_analysis from '../../images/tpd/competitor_analysis.webp';
-import oswegoLovelyPets_empathy_map from '../../images/oswegoStudyBuddy/empathy_map.webp';
-import oswegoLovelyPets_customer_journey_map from '../../images/oswegoStudyBuddy/customer_journey_map.webp';
-import oswegoLovelyPets_testresults from '../../images/oswegoStudyBuddy/testresults.webp';
-
-
 import oswegoLovelyPets_persona from '../../images/oswegoLovelyPets/persona.webp';
 import oswegoLovelyPets_mid_fi from '../../images/oswegoLovelyPets/MID_FI/mid_fi1.webp';
 import oswegoLovelyPets_final_design from '../../images/oswegoLovelyPets/Final_Hi_Fi/final_design.webp';
+import oswegoLovelyPets_prototype_image from '../../images/oswegoLovelyPets/COVER.webp';
+import oswegoLovelyPets_empathy_map from '../../images/oswegoLovelyPets/empathy_map.webp';
+import tpd_lo_fi_1 from '../../images/oswegoLovelyPets/LO_FI/1.webp';
+import tpd_lo_fi_2 from '../../images/oswegoLovelyPets/LO_FI/2.webp';
+import tpd_lo_fi_3 from '../../images/oswegoLovelyPets/LO_FI/3.webp';
+import oswegoLovelyPets_customer_journey_map from '../../images/oswegoLovelyPets/customer_journey_map.webp';
+import oswegoLovelyPets_testresults from '../../images/oswegoLovelyPets/testresults.webp';
 
 export default function() {
     
@@ -34,64 +34,25 @@ export default function() {
         ],
         statement: 'This project aim to build a responsive mobile app from scratch.  This application should offer users to use features like apply for a job, share work, and sign up for events all related to product design.',
         // role: 'UX/UI Designer with total use of 80 hrs.',
-        duration: '1 week',
+        duration: '4 weeks',
         note: 'This is a fictional project for Ux boot camp.',
-        prototype: "https://www.figma.com/file/tEGEGShsxzzJEL3b1PJgDs/Figma-101?node-id=72%3A2",
+        prototype: "https://www.figma.com/proto/tEGEGShsxzzJEL3b1PJgDs/Figma-101?page-id=594%3A2&node-id=599%3A3&viewport=241%2C48%2C0.5&scaling=min-zoom&starting-point-node-id=599%3A3&show-proto-sidebar=1",
 
 
-        projectBackground: "This design is based on a classmate’s frustration with using the SUNY Oswego learning systems. The school uses a lot of software to enhance students’ learning, but it is also a pain point for the students to manage all the software. Looking at the school’s web pages, they are not very user-friendly. This project is to redesign or create a new platform to fix students’ pain points.",
-        goal: "Users may create a profile with their portfolio attached in this app. The users can also search and add other designers and companies to share experience and have private conversations. Most importantly, employers can post up jobs to hire the designers!",
-        problemStatement: "To redesign or design a learning platform that the students of SUNY Oswego use to enhance their study experience. The platform should offer ease for users to log in only once to access most of the learning software.",
+        projectBackground: "Pet owners often gets very worried when traveling away from home and leaving their pets alone. In addition, sending home pets to pet hotels often creates more anxiety and stress. Is there a solution where the pet can stay home and be taken care of simultaneously? This project is to find a solution for the pet owners.",
+        goal: "To create an mobile application that the user can easily find pet sitters around the area. The user may create an account and register their pets, and search for sitter by entering detailed information.",
+        problemStatement: "Design a mobile application where pet owners can trustfully find pet sitters to take care of their pets when they are away from home.",
         role: "UX/UI Designer",
         imageStyle: {
             width: "100%"
+        },
+        goalImageBackgroundStyle: {
+            backgroundColor: "#F6D5B5"
         }
     };
 
-    const research = {
-        goals: [
-            "Understand the user’s pain point when studying in general.",
-            "Understand the user’s pain point when using schooling software.",
-            "Identify the features that are necessary to make changes.",
-            "Understand whether redesigning will make a difference or not."
-        ],
-        researchGoalAnalysis: "Before I interviewed my classmate, I wrote down my goals for the interview and some research questions:",
-        primaryResearchAnalysis: "One classmate is being interviewed for this project since we are designing for each other. She is a graduate student studying Human-Computer Interaction at SUNY Oswego. She is perfect for this interview because she is in her last semester of school and she has experienced all the online learning at Oswego.",
-        sampleInterviewQuestions: [
-            "What does your typical day look like?",
-            "What are your gain and pain points towards education or studying here at the SUNY?",
-            "What are some apps or websites you use often? Why do you like about them?",
-            "How do you feel about blackboard? What do you like and dislike about it?",
-            "If you can change something on the blackboard. What would you change?,"
-        ],
-        interviewers: [
-            {
-                name: "Participant A",
-                age: null,
-                major: "HCI",
-                gender: 'Female',
-                role: 'Graduate student'
-            }
-        ],
-        researchFindingDescription: "After the interviews, I wrote up 5 points that I thought would be useful for my designs:",
-        interviewFinding: [
-            "She thinks it was very hard to be an online student before covid 19 since the school is not doing well with organizing online resources. Covid has made everything better-resourced-wise.",
-            "She believes the school uses way too much learning software which confuses her. It is very hard to keep track of her classes from different platforms.",
-            "Blackboard is definitely the hardest to use out of all the ones that school uses. It is broken all the time and it is not user-friendly at all.",
-            "She dislikes the library page, it is very confusing and sometimes requires us to keep signing in to the page. The homepage of the site is very unorganized.",
-            "She is very bad with audio and numbers. She prefers reading over other types of study sources. "
-        ],
-        surveyImage: null,
-        surveyDescription: null,
-        survey: [],
-        differences: [],
-        secondaryResearchDescription: null,
-        competitorAnalysisImage: tpd_competitor_analysis,
-        imageStyle: {}
-    };
-
     const empathize = {
-        empathyDescription: "I gained a good insight from my user’s perspective and went on to the next step- an empathy map. I tried to focus on my user’s daily study habits, knowing her frustration, I used empathy to list out her possible doing, thinking, feeling, and saying. After that, I created a user persona named Samantha, who is a college students experiencing a similar study situation as my interviewer.",
+        empathyDescription: "After defining the goals, I created an empathy map based on my possible user’s saying, doing, feeling, and thinking. After that, I created a user persona named Chris, who has a busy life being a event coordinator. Chris often needs help taking care of his pets, finding a trust worthy and good pet sitting app is very crucial to him.",
         empathyMapImage: oswegoLovelyPets_empathy_map,
         personaImage: [oswegoLovelyPets_persona],
         imageStyle: {
@@ -101,31 +62,25 @@ export default function() {
     };
 
     const define = {
-        customeDefineTaskTitle: "Pains & Needs:",
+        customeDefineTaskTitle: "",
         taskflows: [],
-        taskflowDescription: "Next, I list out the pains and needs of my users to finalize my design ideas.",
-        painsList: [
-            "The interviewee struggles when she needs to log in to many different learning tools for classes.",
-            "The Interviewee dislikes the library’s unfriendly interface, and she cannot access scholarly articles all the time.",
-            "The interviewee gets annoyed with the unnecessary notifications in Blackboard because she often misses the important ones.",
-            "The interviewee struggles with numbers.",
-            "The interviewee is bad with audio learning and prefers video or textbook learning."
-        ],
-        needsList: [
-            "An all-in-one log-in access tool where she can log in only once to access all the tools she wants.",
-            "A better-designed interface for the blackboard.",
-            "A better-designed library site to access scholarly Journals."
-        ],
-        
+        taskflowDescription: "Next, I created a customer story map to list out all of the necessary steps needed for the users to use the application.",
         customerJourneyMap: "Here I created a customer journey map to focus on the task from logging in to getting citations of a book from the library’s site.",
         customerJourneyMapImage: oswegoLovelyPets_customer_journey_map
     };
 
     const design = {
-        lowFidelity: null,
+        lowFidelity: {
+            images: [tpd_lo_fi_1, tpd_lo_fi_2, tpd_lo_fi_3],
+            description: "I sketched out 2 versions of the lo-fi wireframes and got some feedback from my classmates. The showing is the final version chosen.",
+            imageStyle: {
+                width: "auto",
+                height: "100%"
+            }
+        },
         midFidelity: {
             images: [oswegoLovelyPets_mid_fi],
-            description: "Now the fun part! I created several screens using Figma focusing on the task I did on customer journey map. I focused on designing a home page for the study buddy webpae and redesigning the Panfield Library’s home page. Here are the results.",
+            description: "After sketching, I digitized the wireframes by using Figma, and made some small adjustments. Here are the results.",
             imageStyle: {}
         },
         UIDeign: null,
@@ -133,12 +88,12 @@ export default function() {
     }
 
     const test = {
-        description: "I tested my work with three participants. All of the users being tested are recent graduates from university.",
-        listDescription: "I had three goals doing a usability test:",
+        description: "",
+        listDescription: "I created three user tasks for my participant to do during the test. Here are the three tasks",
         goalList: [
-            "I want to know if the users can successfully finish the task I give them without asking any questions.",
-            "I want to see if the users can direct themselves into the right direction if they ever get lost using this website.",
-            "I would like to get valuable feedbacks from my users."
+            "You are looking for a pet sitter for your cat, please sign in and find a pet sitter by filling in some information and sending a request!",
+            "Perfect! After request, please go to messages and send the sitter a message!",
+            "Lastly, please go to my request page and make a payment to the sitter"
         ],
         testResult: oswegoLovelyPets_testresults,
         imageStyle: {
@@ -161,19 +116,19 @@ export default function() {
                 contents: ["Gather more usability testers for more feedback and iterations."]
             }
         ],
-        finalContent: "This was a very interesting project to work on! Interviewing only one classmate feels like creating a personal design is very fun! I am overall satisfied with my design solution, but if I have more time, I would definitely do deeper research and interview more participants to gather more ideas. Besides creating a full prototype, I also want to design a responsive mobile version since as a student myself, I find cellphones to be much quicker to access to. I hope you had fun reading my case study! Thank you and have a wonderful day!"
+        finalContent: ""
     }
 
     return (
         <div className="case-study-page caseStudyContainer">
-            <OverviewComponent className="tpd-Overview" overview={overview} projectName="OSWEGO Lovely Pets"/>
+            <OverviewComponent className="tpd-Overview" overview={overview} projectName="Lovely Pets"/>
             <GoalAndRole
                 className="tpd-Goal"
                 overview={overview}
                 image={oswegoLovelyPets_prototype_image}/>
-            <Research
+            {/* <Research
                 className="tpd-research"
-                research={research}/>
+                research={research}/> */}
             <div className="divider div-transparent div-arrow-down"></div>
             <section className="sectionTag">
                 <Empathize

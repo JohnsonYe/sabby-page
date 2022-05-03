@@ -3,6 +3,8 @@ import React from "react";
 
 export default function({className, overview, image}) {
     let caseStudySectionName = className ? `caseStudySection ${className} overviewFlexContainer` : "caseStudySection overviewFlexContainer";
+    let goalImageBackgroundStyle = overview.goalImageBackgroundStyle ? overview.goalImageBackgroundStyle : {};
+
     return (
         <div className={caseStudySectionName}>
                 <div className="overviewGoalRole overviewFlexItem goalAndRole">
@@ -33,7 +35,7 @@ export default function({className, overview, image}) {
                 </div>
 
                 <div className="overviewPrototype overviewFlexItem goalAndRole">
-                    <div className="centerWrapper">
+                    <div className="centerWrapper" style={goalImageBackgroundStyle}>
                         <div className="overviewPrototypeWrapper">
                             {
                                 overview.imageStyle
