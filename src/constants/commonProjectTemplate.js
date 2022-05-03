@@ -23,10 +23,23 @@
  *                  role: String
  *             }
  *      researchFindingDescription: String
+ *      interviewFinding: String[]
+ *      surveyImage: Image Object
+ *      surveyDescription: String
+ *      survey: String[]
+ *      differences: String[]
+ *      secondaryResearchDescription: String
+ *      competitorAnalysisImage: image object
+ *      imageStyle: Object css
+ *      
  * EMPATHIZE
+ *      description: String
+ *      empathyMapImage: ImageObject
+ *      personaImage: [List of image object]
+ *      imageStyle: {style object}
  *
  * DEFINE
- * 
+ *      
  * DESIGN
  * 
  * TEST
@@ -37,78 +50,6 @@
  */
 
 
-//  const overview = {
-//     goals: [],
-//     statement: "",
-//     // role: 'UX/UI Designer with total use of 80 hrs.',
-//     duration: '80 hrs',
-//     note: 'This is a fictional project for Ux boot camp.',
-//     prototype: "https://www.figma.com/proto/Zu93IQqf0UO0HZ1BjwxuLV/UXA?node-id=661%3A1&viewport=797%2C424%2C0.2597874701023102&scaling=min-zoom",
-
-
-//     projectBackground: "There are currently more than 1.74 billion websites in existence, and more than 4 million apps available for download. The market of product design has been growing, therefore having an app just for the designers can be beneficial. We want to connect all the product designers out there so we can all grow as a community, as a whole.",
-//     goal: "Users may create a profile with their portfolio attached in this app. The users can also search and add other designers and companies to share experience and have private conversations. Most importantly, employers can post up jobs to hire the designers!",
-//     problemStatement: "This project aim to build a responsive mobile app from scratch.  This application should offer users to use features like apply for a job, share work, and sign up for events all related to product design.",
-//     role: "UX/UI Designer"
-// };
-
-// const research = {
-//     goals: [
-//         "Understand if the designers will use this app and think is convenient.",
-//         "Understand what features the designers really need and expect in this app.",
-//         "Identify the competitors in job finding and UX related applications.",
-//         "Identify what other features should be added for this app.",
-//         "Understand from the employer users perspective and their needs."
-//     ],
-//     researchGoalAnalysis: "After having the idea down, I needed to deepen my understanding and discover how to design this app in the best way, here are my 5 goals:",
-//     primaryResearchAnalysis: "I interviewed two participants who are currently working as a product designer to see what are their thoughts on this mobile application. I also created a survey and  I had 7 participants who gave me great opinions.",
-//     interviewers: [
-//         {
-//             name: "Participant A",
-//             age: 23,
-//             gender: 'Female',
-//             role: 'Product Designer'
-//         },{
-//             name: "Participant B",
-//             age: 24,
-//             gender: "Male",
-//             role: "Product Designer"
-//         }
-//     ],
-//     researchFindingDescription: "After the interviews, I wrote up 5 points that I thought would be useful for my designs:",
-//     interviewFinding: [
-//         "Both of the participants are currently a product designer with a job and with minimum 2 years of experience.",
-//         "Both of the participants expected this app to be a community app like reddit.",
-//         "One participant find value in this app while the other believes that there are already many platforms that does the same thing and it has a strong stand in the industry.",
-//         "Both of the participants believes that there will be no downside for the new job searching apps because different person has different preferences.",
-//         "One participant cared about the app for having connection and mass apply like Indeed, while the other cared more about able to find jobs for newbies with no experience."
-//     ],
-//     surveyImage: tpd_survey_image,
-//     surveyDescription: "The survey also gave me a better understandings of what do my users really want!",
-//     survey: [
-//         "67.5% of the participants said they would download this app after knowing the features of this app.",
-//         "87.5% of the participants said they share their work on other platforms and also likes to view other’s work as insipration.",
-//         "5 out of 7 participants said they wish the sharing work feature could look like Instagram."
-//     ],
-//     differences: [
-//         "Three out of four participants believe virtual try on will make a difference.",
-//         "Females care more about the styling of the clothes, while males are okay with plain, single colored clothes.",
-//         "Two users care about free return because they feel secure when shopping online. The other two users like my male participant didn’t care because he never returns things even if there is a problem."
-//     ],
-//     secondaryResearchDescription: "The conversations in the 1:1 interviews helped me understand my directions better. I tried to find competitors online but there are currenttly no app like this exist yet. So I researched top companies for job searching, making connections, and messaging.",
-//     competitorAnalysisImage: tpd_competitor_analysis,
-//     imageStyle: {}
-// };
-
-// const empathize = {
-//     empathyDescription: "After synthesizing my research, it was time to move on to next steps. I created a persona based on all my research findings. Meet Celine! She is a recent graduate wanting to be in the product design field.  She just finished her portfolio build-up and all ready for job hunting, but she is lacking connections and a good platform to find a good job until she finds The Product Designer app...",
-//     empathyMapImage: tpd_empathy_map,
-//     personaImage: [tpd_persona],
-//     imageStyle: {
-//         width: "auto",
-//         height: "100%"
-//     }
-// };
 
 // const define = {
 //     taskflows: [
